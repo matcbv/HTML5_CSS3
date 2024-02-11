@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Site com imagens responsivas</h1>
+     <p>Esse site adapta as imagens a serem exibidas de acordo com a resolução da aba aberta.</p>
+     <!--A tag picture é semelhante com uma tag <img>, porém possibilita a utilização de tags <source>. Com essas tags podemos informar um tamanho máximo ou mínimo em pixel para que outra imagem seja exibida, através do parâmetro media. Já com srcset, informamos o caminho da imagem a ser substituida,e por fim com type, indicamos o tipo da imagem (jpg, png etc.)-->
+     <picture>
+        <!--Ao utilizarmos a tag source, devemos seguir uma ordem, em que menores comprimentos devem sempre vir primeiro que os maiores Ex: 500 -> 1200 -> 1500 -->
+        <source media="(max-width: 500px)" srcset="imagens/img_cel.jpg" type="image/jpg">
+        <source media="(max-width: 1200px)" srcset="imagens/img_tablet.jpg" type="image/jpg">
+        <img src="imagens/img_pc.jpg" alt="Paisagem">
+    </picture>
+    <h1>Lidando com arquivos de áudio</h1>
+    <!--Para lidarmos com arquivos de audio, temos duas opções:Utilizarmos o-->
+    <h2>Primeiro modo:</h2>
+    <!--controls: Cria um menu de áudio apr o usuário interagir; autoplay: Inicia o áudio automaticamente assim que a página é carregada (Deve estar com o preload como auto para funcionar); loop: Reinicia automaticamente o áudio quando ele finaliza.-->
+    <!--Obs.: Autoplay não funcionando no momento desse estudo 26/01/24-->
+    <audio src="midia/Boom Bap Flick - Quincas Moreira.mp3" controls autoplay loop></audio>
+    <h2>Segundo modo:</h2>
+    <!--O parâmetro preload, indica como o arquivo em questão será pré-carregado: auto (padrão): Site só será carregado por completo, quando todo o arquivo tiver sido baixado; metadata: Baixa algumas informações básicas do arquivo com antecedência; none: Não baixa naa do arquivo, somente quando o usuário interage com ele.-->
+    <audio preload="metadata" controls>
+        <!--A diferença entre os prâmetros src e srcset, é que o src define o arquivo principal, enquanto o srcset informa outras opções para serem utilizadas.-->
+        <!--Ao lidarmos com arquivos de áudio, o navegador pode ou não ter compatibilidade com seu tipo de mídia. Portanto, é recomendado disponibilizar mais de uma opção.-->
+        <source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/mpeg">
+        <!--<source src="midia/Boom Bap Flick - Quincas Moreira.wav" type="media/wav">-->
+        <!--Caso nenhum dos áudios seja compatível, o parágrafo abaixo será exibido:-->
+        <p>Seu navegador não é compatível com arquivos de áudio.</p>
+    </audio>
+
+</body>
+</html>

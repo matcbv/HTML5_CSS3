@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lidando com vídeos</h1>
+    <h2>Vídeos hospedados localmente </h2>
+    <!--Temos duas opções de exibir vídeos, assim como com as imagens-->
+    <h3>Primeira opção:</h3>
+    <!--
+        <video src="midia/video_planetas.mp4" thumb="imagens/thumb.jpeg" autoplay controls></video>
+    -->
+    <h3>Segunda opção:</h3>
+    <video width="520" controls loop>
+        <!--Como nas imagens, temos vários tipos de vídeos, que podem ou não ser suportados pelo navegador sendo utilizado pelo usuário. Dessa meneira, é importante disponibilizarmos mais de uma opção de vídeo.-->
+        <source src="midia/video_planetas.mp4" type="video/mp4" >
+        <!--
+        Ex.:
+        <source src="midia/video_planetas.mp4" type="video/m4v">
+        <source src="midia/video_planetas.mp4" type="video/webm">
+        <source src="midia/video_planetas.mp4" type="video/ogv">
+        -->
+        <p>Seu navegador não suporta a reprodução de vídeo.</p>
+    </video>
+    <h2>Vídeos hospedados fora do nosso site</h2>
+    <h3>Vídeos hospedados no YouTube</h3>
+    <!--Utilizar o YouTube para armazenas seus vídeos e exibí-los em seu site é uma ótima opção, sendo um serviço gratuito e confiável. Isso ajuda a diminuir o tráfego atuado em seu servidor, otimizando seu site.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uLhlghfGY1c?si=F4rvEbO7Ks_my0vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

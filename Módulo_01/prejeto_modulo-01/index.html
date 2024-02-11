@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Final</title>
+</head>
+<body>
+    <h1>Projeto do Módulo 01</h1>
+
+    <p>Nesse módulo aprendemos várias coisas como: Estruturas de uma página, links, lidar com imagens, textos e áudios e um pouco das CSS.</p>
+    <p>A seguir, teremos um áudio, uma imagem e um vídeo anexado em nosso site.</p>
+    <br>
+    <h2>Áudio</h2>
+    <h3>Primeira maneira</h3>
+    <audio src="midia/audio/Woodshedder - Quincas Moreira.mp3" controls autoplay></audio>
+    <h3>Segunda maneira</h3>
+    <audio controls autoplay>
+        <source src="midia/audio/Woodshedder - Quincas Moreira.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <h2>Imagem</h2>
+    <h3>Primeira maneira</h3>
+    <img src="midia/imagem/html5.jpg" alt="Símbolo HTML5">
+    <h3>Segunda maneira</h3>
+    <picture>
+        <source media="(max-width: 250px)" srcset="midia/imagens/css3.jpg" type="image/jpg">
+        <source media="(max-width: 500px)" srcset ="midia/imagens/html5.jpg" type="image/jpg">
+        <img src="midia/imagem/css3.jpg" alt="Imagem CSS3">
+    </picture>
+    <br>
+    <h2>Vídeo</h2>
+    <video src="midia/video/drift_race.mp4" controls autoplay></video>
+    <p><a href="pag_02.html">Página 02</a></p>
+</body>
+</html>

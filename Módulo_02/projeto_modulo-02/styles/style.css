@@ -1,0 +1,16 @@
+/*A pseudo-classe :root pertence a raíz da árvore de nosso documento css, sendo de acesso global. Nela, podemos criar várias variáveis contendo valores que podem ser utilizados em todo nosso código. */
+:root{
+    --cor01: rgb(167, 223, 167);
+    --cor02: rgb(104, 173, 104);
+    --cor03: rgb(114, 130, 125);
+    --cor04: rgba(79, 116, 79, 0.6);
+    --cor05: rgba(46, 55, 46, 0.637);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor03);
+}

@@ -1,0 +1,49 @@
+header{
+    background-color: var(--cor05);
+    padding: 10px 0;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.418);
+}
+
+header > h1{
+    color: var(--cor01);
+    display: inline-block;
+    margin-right: 50px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+}
+
+header > h1 > a{
+    text-decoration: none;
+    color: var(--cor01);
+}
+
+header > nav{
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+/*
+Seletor de filho direto (>): As tags que são filhas diretas de um seletor, são aquelas que não estão contidos em outras tags dentro do seletor.
+Seletor de descendente: (espaço): As tags descendentes são todas as tags que estão dentro daquele seletor.
+*/
+nav > a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: var(--cor02);
+    margin-right: 25px;
+}
+
+nav > a:hover{
+    background-color: var(--cor03);
+    /*
+    transition-duration: Tempo que a animação leva até estar completa
+    transition-delay: Tempo que a animação leva até ser iniciada.
+    */
+    transition-duration: 0.5s;
+}
+
+header > img{
+    width: 100px;
+    /*vertical-align - Em elementos inline, é responsável por realizar o alinhamento vertical do elemento na linha em que está contido.*/
+    vertical-align: middle;
+    margin-left: 70px;
+}

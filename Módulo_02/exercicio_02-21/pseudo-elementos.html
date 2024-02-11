@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a{
+            color: rgb(14, 202, 14);
+            /*A propriedade text-decoration (Decoração de texto) possui valores como: none (Nenhum); underline (Sublinhado), overline (Linha acima); line-throught (Linha através).*/
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*O seletor em questão (visited) entre em vigor quando o link em questão é visitado. Isso é feito através da pseudo-classe visited.*/
+        a:visited{
+            color: darkgreen;
+        }
+        /*O seletor em questão entre em vigor quando o link em questão é ativo. Isso é feito através da pseudo-classe active.*/
+        a:active{
+            color: greenyellow;
+        }
+        /*Os pseudo-elementos são responsáveis por modificar diretamente no conteúdo do elemente em questão. Eles são representando pelo glifo de dois pontos duas vezes seguidas (::). Ex.: No exemplo abaixo, adicionaremos um conteúdo em texto (Link) ao final de cada link, através do pseudo-elemento after.*/
+        a::after{
+            color: black;
+            content: "";
+            text-decoration: underline;
+        }
+    </style>
+    <title>Pseudo-elementos</title>
+</head>
+<body>
+    <h1>Lidando com Pseudo-elementos</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas enim quos accusantium consequuntur inventore. Ipsa eveniet numquam dolores quisquam. Possimus in esse ut, odio est quibusdam deserunt nemo tenetur sed?</p>
+    <!--A diferença entre as tags <a> e <link> é que a tag <link> é direcionada para alterações vinculadas a página em si. Já a tag <a>, é focada para direcionamentos externos a nossa página atual.-->
+    <ul>
+        <li><a href="http://www.youtube.com" target="_blank">YouTube </a></li>
+        <li><a href="http://www.udemy.com" target="_blank">Udemy </a></li>
+        <li><a href="http://www.cursoemvideo.com" target="_blank">Curso em Vídeo </a></li>
+    </ul>
+</body>
+</html>

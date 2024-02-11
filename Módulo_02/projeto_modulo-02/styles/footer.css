@@ -1,0 +1,27 @@
+footer{
+    background-color: rgb(168, 174, 153);
+}
+
+#direitos_autorais{
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+    font-size: 1.3em;
+}
+
+footer > ul{
+    /*List-style - Especifica o tipo de lista que quer apresentar (Com símbolos, números, sem decoração etc.)*/
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+
+footer > ul > li{
+    padding-top: 5px;
+}
+
+abbr{
+    text-decoration: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Veremos sobre div's mais pra frente. Agora uraremos-as somente para auxílio no exercício.*/
+        div{
+            display: inline-block;
+            background-color: cadetblue;
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+        }
+        /*As pseudo-classes são uma forma de classes de estado, as quais são postas em ação caso um estado em específico seja adotado. Elas são representadas pelo glifo de dois pontos (:). Ex.: A pseudo-classe hover terá suas aplicações postas em ação quando o ponteiro do mouse passar através de uma das div's.*/
+        div:hover{
+            background-color: chartreuse;
+        }
+        #secreto{
+            display: block;
+            background-color: black;
+            color: white;
+            border: 2px solid rgb(243, 83, 20);
+        }
+        /*Com o símbolo >, indicamos que desejamos modificar a tag filha <p>, da tag pai <div> (Que nesse caso, está utilizando o id secreto.).*/
+        #secreto > p{
+            display: None;
+        }
+        #secreto:hover > p{
+            display: block;
+            color: orangered;
+        }
+    </style>
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Lidando com Pseudo-classes</h1>
+    <div>Primeira</div>
+    <div>Segunda</div>
+    <div>Terceira</div>
+    <div id="secreto">
+        Dentro dessa div, há um texto secreto
+        <p>Texto secreto!</p>
+    </div>
+</body>
+</html>

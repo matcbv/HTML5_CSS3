@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(56, 48, 27);
+    color: rgb(207, 182, 127);
+}
+
+p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+/*A tag do elemente com o id pode ou não ser informada no seletor. Ex.: h1#principal ou #principal*/
+/*
+id (HTML5) -> # (CSS3)
+class (HTML5) -> . (CSS3)
+*/
+h1#principal{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.edicao_padrao{
+    font-family: Verdana, Tahoma, sans-serif;
+    color: bisque;
+    font-weight: lighter
+}
+
+.destaque{
+    text-decoration: underline;
+}
+
+#inicio_texto{
+    background-color: rgb(139, 113, 78);
+}

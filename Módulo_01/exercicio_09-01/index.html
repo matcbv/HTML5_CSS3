@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <!--Para trabalhamos com links, devemos utilizar a tag <a> (anchor) junto do parâmetro href (hyperlink reference). Junto a eles, temos dois importantes parâmetros, como target, indicando de que maneira o link será aberto (_blank - nova página e _self [padrão] - sobrepor a página atual) e rel, indicando que relação link tem com a página (next, prev, author, external)-->
+
+    <!--Obs.: Ao utilizarmos uma # no parâmetro href, indicamos que o link está vazio.-->
+    <p>É possível acessarmos o YouTube clicando <a href="https://www.youtube.com/" target="_blank" rel="external">aqui</a>.</p>
+    <!--Nos casos de a aba pertencer ao mesmo site, é recomendado utilizar o target _self. Já nos casos de ser uma aba de outro site, preferenciamos o target _blank-->
+    <h2>Links internos</h2>
+    <p>Link para acesso a seguna página do site: <a href="pag_02.html" rel="next">Segunda página...</a></p>
+    <h2>Link de download</h2>
+    <ul>
+        <!--Para criarmos um link de dowload, basta informarmo o caminho do link através do parâmetro href. Também temos os parâmetros download, que informa ao navegador para ter preferência em baixar do que navegar nesse link, onde podemos também, passar o nome que o arquivo terá ao ser baixado, e type, que informa o tipo do documeto que está sendo lidado.-->
+        <li><a href="LinkDownload/Exemplo.pdf" download="ex_pdf" type="application/pdf">Download PDF</a></li>
+        <li><a href="LinkDownload/Exemplo.zip" download="ex_zip" type="application/zip">Dowload ZIP</a></li>
+    </ul>
+</body>
+</html>

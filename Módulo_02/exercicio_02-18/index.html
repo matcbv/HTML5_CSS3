@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            /*Ao utilizarmos a tag font-family com três fontes, daremos ao navegador outras opções caso uma delas não seja encontrada. Seguindo a ordem: primeira, segunda, terceira.*/
+            /*Utilizando somente os nomes sans-serif, serif ou monospace, estaremos indicando ao navegador que ele escolha, respectivamente, a fonte não serifada, serifada e monoespaçada padrão sejam utilizadas.*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*Por padrão, é recomendado que utilizemos as medidas px (pixel) e em (tamanho padrão = 16px)*/
+            font-size: 16px /*16px = 1em*/;
+            /*text-align: left (alinhado na esquerda); text-align: right (alinhado na direita); text-align: justify (alinhamento em ambas as direções); text-align: center (alinhado no centro)*/
+            text-align: justify;
+        }
+        h1{
+            /*
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            */
+            /*Podemos simplificar o código acima da seguinte maneira, seguindo a ordem: style; weight; size; family, como demonstrado no código abaixo.*/
+            font: italic bolder 2em 'Times New Roma', Times, serif;
+        }
+        p{
+            /*font-weight é responsável por definir a expessura de nossa fonte: lighter: mais fina; normal: normal; bold: negrito; bolder: mais negrito.*/
+            font-weight: bold;
+        }
+    </style>
+    <title>Fontes</title>
+</head>
+<body>
+    <h1>Lidando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga possimus recusandae magnam consequatur delectus accusamus non labore quisquam, nam quia iusto eaque numquam iure dolores minus est, deleniti natus reiciendis?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, vitae qui iste autem assumenda maxime optio maiores nobis excepturi voluptate tempore dolores id sunt incidunt! Ea dignissimos nam alias voluptatum!</p>
+    <h2></h2>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-color: #BCF4F4;
+}
+
+main{
+    background-color: white;
+    border-radius: 5%;
+    padding: 5% 10%;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+    box-shadow: 5px 5px 7px #489199;
+}
+
+h1{
+    text-align: center;
+    color: #025373;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2{
+    color: #025373
+}
+
+p{
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+}
