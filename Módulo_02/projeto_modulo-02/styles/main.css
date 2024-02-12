@@ -23,7 +23,7 @@ section{
     Obs.: Também podemos utilizar a porcentagem como métrica. Uma porcentagem de 50%, por exemplo, tranformaria a div em um círculo.
     */
     border-radius: 10px;
-    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #div_pag02{
