@@ -8,22 +8,40 @@
             margin: 0;
         }
         body{
+            height: 100vh;
             background-color: black;
-            background-image: url(imagens/teste.jpg);
+            background-image: url(imagens/wallpaper002.jpg);
             background-position: center;
             background-repeat: no-repeat;
             /*
-            auto: Valor padrão da propriedade. Responsável por exibir a imagem viewport, porém sem ajustes para diferentes resoluções.
-            contain - Irá exibir 100% da imagem, independente da resolução da tela em que está sendo exibida.
+            background-size:
+            auto: Valor padrão da propriedade. Responsável por exibir a imagem viewport, porém sem ajustes para diferentes resoluções;
+            contain - Irá exibir 100% da imagem, independente da resolução da tela em que está sendo exibida;
             cover: Irá cobrir toda a tela do viewport, ajustando a imagem sem a deformar.
             Obs.: Também podemos usar porcentagens, como 100% para width e 100% para height, porém a imagem aaba ficando distorcida, sendo menos apropriado pra uso.
             */
-            background-size: auto;
-            height: 100vh;
+            background-size: cover;
+            /*
+            background-attachment:
+            fixex - Imagem se torna fixa no fundo, se mantendo mesmo com a reloagem da página;
+            scroll - Imagem rola junto da página.
+            */
+            background-attachment: fixed;
+
+            /*
+            Shorthand - background: color image position repeat size* attachment
+            Obs.: O size ainda não foi implementado no shorthand, por mais que esteja na documentação.
+
+            Dessa forma, a propriedade ficaria assim:
+            background: black url(imagens/wallpaper002.jpg) center no-repeat fixed;
+            background-size: cover;
+            */
+
         }
         div{
             background-color: white;
-            width: 60%;
+            /*Ao utilizarmos o max-width nessa div, definimos o tamanho máximo que ela possuirá até que começe a ser reduzida. */
+            max-width: 700px;
             margin: auto;
             border-radius: 10px;
             padding: 10px 30px;
@@ -40,7 +58,26 @@
 <body>
     <div>
         <h1>Titulo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut provident fuga ipsa at, corrupti amet corporis placeat aperiam, ex architecto molestias nobis similique alias odio cupiditate in dolore omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni quis earum ipsam similique culpa cumque aperiam unde optio nesciunt exercitationem rem iste, corporis blanditiis eius, quia voluptatem possimus dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. In deleniti nesciunt sequi voluptatibus perspiciatis molestias dicta neque, repellat consequuntur totam ipsum temporibus? Fugit necessitatibus ratione obcaecati alias sapiente deserunt perferendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus provident dolorum ipsam amet reprehenderit, voluptas beatae expedita. Beatae id accusamus autem? Atque a numquam deleniti doloremque voluptate quibusdam omnis consequatur.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quod illum impedit enim vel perspiciatis debitis, obcaecati ipsa molestias architecto unde quo neque officia quaerat pariatur eius blanditiis sunt est.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique culpa tenetur omnis? Quos maiores id maxime fugiat totam eligendi laborum voluptatem. Architecto voluptas modi sunt libero, corrupti rem totam expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, hic sapiente. Similique incidunt eveniet eaque eum, consectetur illum quasi non rem assumenda veritatis possimus ipsum quaerat ratione! Est, laboriosam odit!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat perferendis ullam enim, excepturi temporibus, molestiae officiis veniam nemo fugit perspiciatis beatae et corrupti voluptates dignissimos quo cumque corporis fugiat in.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque consequuntur sed laborum, dignissimos nisi dolorum expedita nulla libero voluptatem, quasi, rem perspiciatis ex repellat ipsa at et omnis praesentium!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora!</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates iure non aliquid quaerat, pariatur unde quia expedita est ex dignissimos dolore corporis, magni autem possimus? Enim voluptas cupiditate facilis voluptatum.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic rem cumque ullam dolor enim, perferendis amet laboriosam iure libero sint aut vel dicta. Recusandae sed aliquid aliquam officia! Praesentium, tempora!</p>
+        <br>
     </div>
 </body>
 </html>
