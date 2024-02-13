@@ -1,0 +1,16 @@
+main section{
+    max-width: 500px;
+}
+
+main p{
+    font-family: 'Playfair Display';
+    padding-left: 80px;
+    line-height: 2em;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#sec_img01{
+    background: transparent url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
