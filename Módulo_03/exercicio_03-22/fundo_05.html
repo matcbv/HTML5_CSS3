@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: black;
+            background-image: url(imagens/teste.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            /*
+            auto: Valor padrão da propriedade. Responsável por exibir a imagem viewport, porém sem ajustes para diferentes resoluções.
+            contain - Irá exibir 100% da imagem, independente da resolução da tela em que está sendo exibida.
+            cover: Irá cobrir toda a tela do viewport, ajustando a imagem sem a deformar.
+            Obs.: Também podemos usar porcentagens, como 100% para width e 100% para height, porém a imagem aaba ficando distorcida, sendo menos apropriado pra uso.
+            */
+            background-size: auto;
+            height: 100vh;
+        }
+        div{
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+    <title>Tipos de tamanho de imagem</title>
+</head>
+<body>
+    <div>
+        <h1>Titulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut provident fuga ipsa at, corrupti amet corporis placeat aperiam, ex architecto molestias nobis similique alias odio cupiditate in dolore omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni quis earum ipsam similique culpa cumque aperiam unde optio nesciunt exercitationem rem iste, corporis blanditiis eius, quia voluptatem possimus dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. In deleniti nesciunt sequi voluptatibus perspiciatis molestias dicta neque, repellat consequuntur totam ipsum temporibus? Fugit necessitatibus ratione obcaecati alias sapiente deserunt perferendis.</p>
+    </div>
+</body>
+</html>
