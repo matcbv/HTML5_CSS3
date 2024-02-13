@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        Obs.: 100% - Elemento filho ocupa 100% do espaço disponível pelo elemento pai; auto - Elemento pai ajusta seu tamanho para o ocupado pelo elemento filho.
+        */
+        .box{
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        /*Podemos escolher a posição da nossa imagem que será exibida através da propriedade background-position. Temos diversos valores possíveis, em uma mistura de right, left, top, bottom e center.*/
+        #b1{
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: top left;
+            width: 50%;
+            height: 300px;
+        }
+        #b2{
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center;
+            width: 50%;
+            height: 300px;
+        }
+        #b3{
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: right center;
+            width: 50%;
+            height: 300px;
+        }
+        #b4{
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: right bottom;
+            width: 50%;
+            height: 300px;
+        }
+    </style>
+    <title>Posicionamento</title>
+</head>
+<body>
+    <h1>Imagem completa:</h1>
+    <!--
+    Obs.: 100% - Elemento filho ocupa 100% do espaço disponível pelo elemento pai; auto - Elemento pai ajusta seu tamanho para o ocupado pelo elemento filho.
+    -->
+    <img src="imagens/wallpaper003.jpg" alt="Imagem de uma metrópole">
+    <h1>Imagem com diferentes posicionamentos:</h1>
+    <div class="box" id="b1">
+
+    </div>
+    <div class="box" id="b2">
+
+    </div>
+    <div class="box" id="b3">
+
+    </div>
+    <div class="box" id="b4">
+
+    </div>
+</body>
+</html>

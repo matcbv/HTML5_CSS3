@@ -3,49 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /*
-        TTF - format('truetype')
-        OTF - ('opentype')
-        WOFF/WOFF2 - format(woff)/format(woff2)
-        */
-        @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-
-        @font-face {
-            font-family: 'hellbone';
-            /*Podemos adicionar mais de um formato de arquivo caso a fonte em questão suporte.*/
-            src: url(fontes/Hellbone-Demo.otf), format('opentype') /*, url(fontes/Hellbone-Demo.ttf), format('truetype')*/;
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body{
-            background-color: black;
-        }
-        h1{
-            font-family: "Honk", system-ui;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-size: 3.5em;
-            text-align: center;
-        }
-        h2{
-            font-family: 'hellbone', serif;
-            color: rgb(204, 76, 17);
-            font-size: 3em;
-        }
-        p{
-            font-weight: normal;
-            color: white;
-            font-size: 1.5em;
-            text-align: justify;
-        }
-    </style>
-    <title>Google Fonts</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ID em CSS3</title>
 </head>
 <body>
-    <h1>Título</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iste sint, illum minima quia velit ipsam labore facilis soluta amet beatae quasi aut nostrum itaque odit id eligendi excepturi enim!</p>
-    <h2 style="font-family: 'hellbone';">Título personalizado</h1>
+    <!--Um id só pode ser utilizado em um elemente por vez. Ex.: O id criado abaixo (principal) não pode ser utilizado em outro h1.-->
+    <!--
+    Para replicamos uma alteração em mais de um elemento, devemos utilizar o atributo class
+    Um elemento pode ter mais de uma classe e pode ter um id junto de uma classe. 
+    Obs.: OS valores do id sobrepõem os da classe.
+    -->
+    <h1 id="principal" class="destaque">Titulo Principal</h1>
+    <h1 class="edicao_padrao">Titulo Primário</h1>
+    <!---->
+    <p><span id="inicio_texto" class="destaque">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Veritatis maiores mollitia officiis labore dolor, quas sit deleniti dolorum dolore eligendi nam eos molestias facilis cum libero. Alias quos ipsam expedita.</p>
+    <h2 class="edicao_padrao">Titulo Secundário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum neque, explicabo placeat iste eum dicta non provident repellat sequi obcaecati rem et enim possimus repudiandae cupiditate vel animi maiores ullam?</p>
+    <h3 class="edicao_padrao">Título Terciário</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad porro quod itaque. Asperiores, quod provident. Sapiente, eum ea minima cum fugit porro assumenda voluptates dolorem! Ipsam quibusdam impedit totam.</p>
 </body>
 </html>
