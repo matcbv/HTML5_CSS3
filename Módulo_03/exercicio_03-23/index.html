@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            /*
+            border-collapse: Define o espaçamento contido entre as células da nossa tabela.
+            separate: Valor padrão da propriedade. Separa as células com um espaçamento entre elas.
+            collapse: Retira o espaço entre as células, deixando-as encostadas uma a outra.
+            */
+            border-collapse: collapse;
+            background-color: rgba(128, 128, 128, 0.452);
+            width: 400px;
+            height: 400px;
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+            /*A propriedade vertical-align funciona somente em elementos inline-block. Ele alinha o conteúdo somente na altura da linha em que está contido.*/
+            vertical-align: bottom;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Lidando com tabelas</h1>
+    <!--
+    Ao lidarmos com tabelas, temos como principais componentes as tags:
+    <table> - Define o início e o fim da nossa tabela.
+    <th> (Table Header) - Define o cabeçalho de uma coluna da nossa tabela.
+    <tr> (Table Row) - Define uma linha da nossa tabela.
+    <td> (Table Data) - Define um dado contido em uma das células de nossa tabela.
+    Obs.: Veremos sobre as tags <th> nas próximas etapas.
+    -->
+    <!--Obs.: Nas tabelas o fechamento das tags <th>, <tr> e <td> não é obrigatório-->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
