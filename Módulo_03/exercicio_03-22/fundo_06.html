@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            /*
+            Para conseguirmos centralizar uma caixa verticalmente, devemos aplicar as os valores relative e absolute para a caixa pai e a filho, respectivamente.
+            static (valor padrão): Valor padrão das caixas. Ocupam seus espaços no site e não aceitam as propriedades left, right, top e bottom.
+            relative: As caixas permanecem no fluxo normal do site, ocupando normalmente o espaço que possuem. Entretanto, passam a aceitar as propriedades de left, right, top e bottom.
+            absolute: As caixas saem do fluxo normal do site, passando a ser vinculadas a caixa pai mais próxima que tenha um valor diferente de static (valor padrão). Também aceita os valores de left, right, top e bottom.
+            */
+            position: relative;
+            background-color: rgb(74, 74, 134);
+            width: 800px;
+            height: 600px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+        #caixa{
+            position: absolute;
+            background-color: rgb(80, 133, 80);
+            width: 300px;
+            height: 200px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /*
+            Propriedades left, right, top e buttom:display:
+            left: Define o espaçamento a esquerda que será aplicado na caixa.
+            right: Define o espaçamento a direita que será aplicado na caixa.
+            top: Define o espaçamento será aplicado acima da caixa.
+            bottom: Define o espaçamento que será aplicado abaixo da caixa.
+            */
+            left: 50%;
+            top: 50%;
+            /*A propriedade tranform consegue modificar uma caixa qualquer através de certos valores. Nesse caso, utilizaremos o valor translate, que terá os valores de direta ou esquerda e cima ou baixo em seus parâmetros. Ex.:
+            Primeiro valor positivo: Caixa move pra direita.
+            Primeiro valor negativo: Caixa move pra esquerda.
+            Segundo valor positivo: Caixa move pra baixo.
+            Segundo valor negativo: Caixa move pra cima.
+            */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <title>Alinhamento vertical</title>
+</head>
+<body>
+    <h1>Alinhando uma caixa verticalmente</h1>
+    <div id="container">
+        <div id="caixa">
+        </div>
+    </div>
+</body>
+</html>
