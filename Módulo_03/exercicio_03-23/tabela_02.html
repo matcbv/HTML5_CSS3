@@ -13,21 +13,26 @@
         }
         table{
             font-size: 1.3em;
+            /*Ao definirmos uma largura a tabela, caso definirmos a largura de uma coluna, a largura das outras serão divididas de acordo com a largura total restante da tabela.*/
+            width: 500px;
+            border-collapse: collapse;
         }
         thead{
             background-color: orange;
         }
         th{
-            width: 160px;
+            border: 2px solid black;
             height: 60px;
         }
         td{
+            border: 2px solid black;
             text-align: center;
             height: 60px;
             background-color: beige;
         }
         .num{
             text-align: right;
+            padding-right: 5px;
         }
     </style>
     <title>Tabelas grandes</title>
@@ -47,7 +52,7 @@
             <tr>
                 <th>População</th>
                 <th>Estados</th>
-                <th>Porcentagem da população</th>
+                <th>Porcentagem nacional</th>
             </tr>
         </thead>
         <tbody>
