@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 50px;
+            border: 2px solid black;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+    </style>
+    <title>Mesclagem de células</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>A</td>
+            <!--colspan - Mesclagem de colunas. O valor passado, será o número de colunas a ser mesclado.-->
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <!--rowspan - Mesclagem de linhas. O valor passado, será o número de linhas a ser mesclado.-->
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+</body>
+</html>
