@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .a{
+            background-color: rgb(241, 237, 171);
+        }
+        #b{
+            background-color: rgb(238, 182, 61);
+            color: white; /* <- Não terá efeito*/
+        }
+    </style>
+    <title>Padronização de colunas</title>
+</head>
+<body>
+    <table>
+        <!--A tag <colgroup> informa a quanntidade e mesclagem das colunas presentes em nossa tabela. Caso tenhamos 4 colunas, devemos informar tal informação através de tags <col>.
+        Obs.: A tag <col> não possui fechamento.-->
+        <colgroup>
+            <col class="a">
+            <!--
+            A utilizarmos a propriedade span, as colunas selecionadas só serão afetadas por 4 propriedades:
+            - background-color
+            - border
+            - width
+            - visibility
+            -->
+            <col id="b" span="2">
+            <col class="a">
+        </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Matheus</td>
+            <td>21</td>
+            <td>Masculino</td>
+            <td>Desenvolvedor de Software</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>25</td>
+            <td>Masculino</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Márcia</td>
+            <td>29</td>
+            <td>Feminino</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>19</td>
+            <td>Feminino</td>
+            <td>Cantora</td>
+        </tr>
+    </table>
+</body>
+</html>
