@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        iframe{
+            /*O iframe, por padrão, vem com um width de 300px e um height de 150px.*/
+            height: 400px;
+        }
+    </style>
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Nosso primeiro Iframe</h1>
+    <br>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 2em;">
+        A seguir, temos o site do Curso em Vídeo:
+        <!--
+        Com a tag <iframe>, conseguimos representar uma página externa através de um quadro dentro do nosso site. Entre as tags de iframe, colocaremos o conteúdo que irá aparecer caso o iframe não seja compatível com algum navegador. É sempre interessante colocarmos um link que direciona pro conteúdo do iframe.
+        frameboard: Através dos valores 0 ou 1, definimos um quadro sem borda ou com uma borda padrão, respectivamente.
+        Obs.: Alguns sites não irão funcionar pois não aceitam vínculo pelo iframe.
+        -->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0"><p>Link para o site do Curso em Vídeo: <a href="https://www.cursoemvideo.com/"></a></p></iframe>
+    </p>
+    <h2>Iframe alocado localmente</h2>
+    <!--A propriedade scrolling tem três possíveis valores:
+    auto - Caso a página exceda o as delimitações do iframe, irá apresentar o scroll, caso contrário, não.
+    yes - Irá apresentar a barra de scroll mesmo não sendo necessário.
+    no - Não irá apresentar a barra de scroll.
+    -->
+    <!--Caso o conteúdo que esteja apresentando esteja relacionado com a página atual, considere adicioná-lo diretamente a página ao invés de usar iframes. Isso se faz necessário pois quando o usuário realiza uma busca, o navegador pode acabar não notando que o iframe está relacionado ao conteúdo da busca, limitando o alcançe.-->
+    <iframe src="pag_02.html" frameborder="0" scrolling="auto"></iframe>
+</body>
+</html> 
