@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        iframe{
+            background-color: lightgrey;
+            height: 400px;
+            width: 600px;
+            border: 2px solid black;
+        }
+
+    </style>
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Direcionamento de navegação</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo quod perferendis eum consequuntur mollitia quia quisquam iste, officia corrupti, incidunt quasi libero velit unde! Laboriosam illo est saepe minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex, accusamus inventore sunt, commodi dolore architecto ipsam beatae minima, mollitia ab veniam! Iste impedit, eveniet necessitatibus fugit libero excepturi? Odit.</p>
+    <p>
+        <ul>
+            <!--Com a propriedade target, também podmos definir um elemento como destino através da propriedade name, que será aplicada ao elemento de destino.-->
+            <li><a target="frame" href="paginas_extras/pag_02.html">Link 1</a></li>
+            <li><a target="frame" href="paginas_extras/pag_03.html">Link 2</a></li>
+            <li><a target="frame" href="paginas_extras/pag_04.html">Link 3</a></li>
+        </ul>
+    </p>
+    <br>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 2em;">
+    <!--A propriedade srcdoc permite incorporar um documento HTML completo e autocontido dentro de outro documento HTML-->
+    <!--A propriedade name atribui um nome a nossa tag, que pode ser referenciado em outras partes do nosso código.
+    Obs.: A tag <name> deve ser sempre substituída pela tag <id> quando possível. Em alguns casos, o uso de id no lugar de name pode aind não ser suportado pelos navegadores.
+    -->
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções informadas acima.</h1>" frameborder="0" scrolling="auto"><p>Infelizmente seu navegador não é compatível com iframe.</p></iframe>
+    </p>
+</body>
+</html> 

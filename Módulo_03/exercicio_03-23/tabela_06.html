@@ -15,8 +15,17 @@
         }
         #responsiva{
             /*A propriedade overflow irá modificar a forma que o conteúdo que é vazado se comporta. Temos três possibilidade de overflow:
+            overflow - Irá modificar a forma que o conteúdo vertical e horizontal excedido é apresentado.
+            overflow-x - Irá modificar a forma que o conteúdo horizontal excedido é apresentado.
+            overflow-y - Irá modificar a forma que o conteúdo vertical excedido é apresentado.
+            os possíveis valores são:
+            - scroll: Adiciona a barra de rolagem
+            - auto: Deixa que o navegador escolha como tratar o conteúdo excedido. (Geralmente também utiliza o scroll)
+            - hidden: Corta o conteúdo em excesso, escondendo-o.
+            - visible: Faz o conteúdo ultrapassar a limitação da caixa em que está contido.
+            Obs.: A propriedade overfow deve ser aplicado na caixa pai e não no conteúdo.
             */
-            overflow-x: scroll;
+            overflow-x: visible;
         }
     </style>
     <title>Tabela responsiva</title>
