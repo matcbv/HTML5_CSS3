@@ -11,7 +11,7 @@ body{
 nav{
     padding-top: 30px;
     width: 8vw;
-    height: 100vh;
+    height: 95.9vh;
     text-align: center;
     right: 0;
     float: right;
@@ -32,7 +32,7 @@ nav img{
     width: 311px;
     height: 627px;
     position: relative;
-    top: 45px;
+    top: 40px;
 }
 
 iframe{
