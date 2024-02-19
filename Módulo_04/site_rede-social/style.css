@@ -6,6 +6,7 @@
 body{
     background: url(imagens/fundo-madeira.jpg) black no-repeat ;
     background-size: cover;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -14,8 +15,8 @@ nav{
     width: 8vw;
     height: 90vh;
     text-align: center;
-    right: 0;
     float: right;
+    margin-right: 20px;
 }
 
 nav img{
@@ -33,7 +34,7 @@ nav img{
     width: 311px;
     height: 627px;
     position: relative;
-    top: 30px;
+    top: 60px;
 }
 
 iframe{
@@ -42,6 +43,6 @@ iframe{
     width: 85%;
     height: 75%;
     position: absolute;
-    top: 12.5%;
-    left: 7.5%;
+    top: 12.9%;
+    left: 7.7%;
 }
