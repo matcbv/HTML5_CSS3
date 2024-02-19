@@ -10,7 +10,7 @@ body{
     height: 100vh;
 }
 
-nav{
+#botoes{
     padding-top: 30px;
     width: 8vw;
     height: 90vh;
@@ -19,7 +19,7 @@ nav{
     margin-right: 20px;
 }
 
-nav img{
+#botoes img{
     margin-top: 25px;
     width: 60px;
     height: 60px;
@@ -27,14 +27,22 @@ nav img{
     border-radius: 50%;
 }
 
-#caixa{
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#celular{
     margin: auto;
-    background-image: url(imagens/frame-iphone.png);
-    background-repeat: no-repeat;
+    background: url(imagens/frame-iphone.png) no-repeat;
+    background-size: cover;
+    position: absolute;
     width: 311px;
     height: 627px;
-    position: relative;
-    top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 iframe{
@@ -42,7 +50,7 @@ iframe{
     background-size: cover;
     width: 85%;
     height: 75%;
-    position: absolute;
+    position: relative;
     top: 12.9%;
     left: 7.7%;
 }
