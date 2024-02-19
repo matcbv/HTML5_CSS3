@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(imagens/fundo-madeira.jpg) black no-repeat ;
+    background-size: cover;
+}
+
+nav{
+    padding-top: 30px;
+    width: 8vw;
+    height: 100vh;
+    text-align: center;
+    right: 0;
+    float: right;
+}
+
+nav img{
+    margin-top: 25px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#caixa{
+    margin: auto;
+    background-image: url(imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 627px;
+    position: relative;
+    top: 45px;
+}
+
+iframe{
+    background-image: url(imagens/tela-home.jpg);
+    background-size: cover;
+    width: 85%;
+    height: 75%;
+    position: absolute;
+    top: 12.5%;
+    left: 7.5%;
+}
