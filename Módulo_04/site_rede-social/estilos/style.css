@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url(imagens/fundo-madeira.jpg) black no-repeat ;
+    background: url(../imagens/fundo-madeira.jpg) black no-repeat ;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -64,7 +64,7 @@ main{
 
 #celular{
     margin: auto;
-    background: url(imagens/frame-iphone.png) no-repeat;
+    background: url(../imagens/frame-iphone.png) no-repeat;
     background-size: cover;
     position: absolute;
     width: 311px;
@@ -75,11 +75,9 @@ main{
 }
 
 iframe{
-    background-image: url(imagens/tela-home.jpg);
-    background-size: cover;
-    width: 85.2%;
-    height: 75%;
+    width: 85.6%;
+    height: 74.9%;
     position: relative;
     top: 12.9%;
-    left: 7.1%;
+    left: 7.2%;
 }
