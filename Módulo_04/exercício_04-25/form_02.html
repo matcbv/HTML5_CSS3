@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02</title>
+</head>
+<body>
+    <h1>Complementando nosso formulário anteriror</h1>
+    <!--
+    Em formulários, temos dois tipos de métodos de envio. São eles o get e o post.
+    O método get é associado a requisição de dados, embora não seja limitado a somente essa função, podendo também realizar o envio de dados. usaremos o get quando lidarmos com dados não sensíveis e de tamanho reduzido. Os dados tratados são expostos na URL, e ela é anexada na request-line, que fica na primeira linha do cabeçalho HTTP. O get só pode tratar dados com até 3000 bytes.
+
+    Já com o método post, os dados são postos diretamente ao corpo do cabeçalho HTTP, onde o recurso que as informações estão contidas (cadastro.php) é anexada na request-line. Utilizaremos o post ao lidarmos com dados não sensíeis e de tamanho elevados e com arquivos de quaisquer tipos.
+    -->
+    <form autocomplete="on" action="cadastro.php" method="post">
+        <p>
+            <!--Com a propriedade required, tornamos o preenchimento do input em questão obrigatório.-->
+            <!--Com a propriedade minlenght e maxlenght, definimos, respecitvamente, o numero mínimo e máximo de caracteres do input em questão.-->
+            <!--Com a propriedade placeholder, definimos dentro do input, uma dica com o que o usuário deve o preencher.-->
+            <!--Quando definimos o autocomplete do formulário como on, devemos adicionar nos inputs que tipo de dados o navegador deve autocompletar. Cada tipo de input tem diversas opções de automplete. -->
+            <label for="nome">Usuário: </label><input type="text" id="nome" name="nome" minlength="3" maxlength="15" placeholder="Nome de usuário" autocomplete="username" required>
+        </p>
+        <p>
+            <!--Com a propriedade size, definimos o tamanho do input em questão.-->
+            <!--Com autocomplete current-password, o navegador sugere senhas já cadastradas pelo usuários. Já com o valor new-password, o navegador sugere senhas fortes criadas por ele.-->
+            <label for="senha">Senha:</label><input type="password" id="senha" name="senha" minlength="8" maxlength="20" placeholder="
+            Senha" autocomplete="new-password" size="22" required>
+        </p>
+        <p>
+            <input type="submit" value="Acessar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
