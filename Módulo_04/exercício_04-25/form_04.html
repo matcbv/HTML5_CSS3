@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+</head>
+<body>
+    <form autocomplete="on" action="cadastro.php">
+        <p>
+            <label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+        <p>
+            <!--No input de valor tel, temos vários valores de autocomplete disponíveis, alguns deles são:
+            -tel: Este é o valor padrão e é usado para campos de telefone gerais, onde o usuário pode inserir seu número de telefone completo, incluindo o código de área e o número.
+            - tel-local: Este valor é usado para campos de telefone onde se espera que o usuário insira apenas o número local do telefone, sem o código de área ou o código do país.
+            - tel-national: Este valor é usado para campos de telefone onde se espera que o usuário insira um número de telefone no formato nacional do país. Por exemplo, nos Estados Unidos, isso significaria o formato (123) 456-7890, enquanto em outros países o formato pode variar.
+            - tel-area-code: Este valor é usado para campos de telefone onde se espera que o usuário insira apenas o código de área do número de telefone, sem o prefixo do país ou o número específico.
+            - tel-country-code: Este valor é usado para campos de telefone onde se espera que o usuário insira o código do país do número de telefone, geralmente como um código numérico internacional
+            -->
+            <label for="tel">Telefone: </label><input type="tel" name="tel" id="tel" autocomplete="" required>
+        </p>
+        <p>
+            <input type="submit" value="Acessar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
