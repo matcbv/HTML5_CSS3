@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <!--Com o input do tipo radio, criamos caixas de marcação com escolha única, onde podemos selecionar apens uma dentre todas.
+            Obs.: Para o input radio funcionar, todos os inputs devem possuir o mesmo valor em name.
+            -->
+            <legend>Sexo</legend>
+            <!--Para deixarmos uma das opções já marcadas, utilizamos a propriedade checked-->
+            <!--Nesse caso, ao utilizarmos a propriedade value, definimos o valor que será anexado no corpo do protocolo HTTP ou HTTPS para ser encaminhado até o servidor de destino.-->
+            <input type="radio" name="sx" id="sxmasc" value="M" checked><label for="sxmasc">Masculino</label><br>
+            <input type="radio" name="sx" id="sxfem" value="F"><label for="sxfem">Feminino</label><br>
+        </fieldset>
+        <fieldset>
+            <!--Com o input de tipo checkbox, criamos uma caixa de marcação.-->
+            <legend>Cor preferida</legend>
+            <input type="checkbox" name="azul" id="azul"><label for="azul">Azul</label><br>
+            <input type="checkbox" name="vermelho" id="vermelho"><label for="vermelho">Vermelho</label><br>
+            <input type="checkbox" name="verde" id="verde"><label for="verde">Verde</label><br>
+            <input type="checkbox" name="amarelo" id="amarelo"><label for="amarelo">Amarelo</label>
+        </fieldset>
+    </form>
+</body>
+</html>
