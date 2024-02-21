@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+                <option value="">---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="pr">Paraná</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="sc">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--Com a tag <datalist>, podemos criar um campo preenchível mas que também possui opções a serem escolhidas. Utilizamos essa tag em conjunto com a tag input. Para relacionarmos as duas tags, tevemos utilizar a propriedade list no input, passando como valor, o id da datalist.-->
+            <label for="profissao">Profissão: </label>
+            <input type="text" name="profissao" id="profissao" list="profissoes">
+            <datalist id="profissoes">
+                <option>Professor(a)</option>
+                <option>Médico(a)</option>
+                <option>Engenheiro(a)</option>
+            </datalist>
+        </p>
+        <p>
+            <!--Com a tag <textarea>, criamos um campo de texto para ser preenchido pelo usuários. Nele, podemos informar o número de colunas (cols) e linhas (rows) que o campo irá exibir na tela. Não existe tamanho máximo de caracteres para a tag textarea.-->
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Acessar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
