@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 08</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <!--
+            O comando oninput é responssável por definir ações ao inserirmos valores nos inputs. Essas ações são feitas em javascript.
+            Com o comando soma.innerHTML, indicamos que iremos trabalhar no elemento HTML de id soma. A propriedade Number coverte o valor proveniente do input de uma string para o tipo number.
+            -->
+            <label for="num1">Primeiro número: </label><input type="number" id="num1" name="num1" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Segundo número: </label><input type="number" id="num2" name="num2" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <!--A tag output é responsável por mostrar os dados na tela. A tag output não envia dados, somente os exibe.-->
+            <label for="soma">Soma: </label><output id="soma" name="soma">0</output>
+        </p>
+        <P>
+            <label for="nivel">Nível: </label><input type="range" name="nivel" id="nivel" min="1" max="10" value="3" oninput="indice.innerHTML = Number(nivel.value)"><output id="indice">5</output>
+        </P>
+    </form>
+</body>
+</html>
