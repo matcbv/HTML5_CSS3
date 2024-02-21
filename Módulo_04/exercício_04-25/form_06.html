@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 06</title>
+</head>
+<body>
+    <!--Como estamos lidando com arquivos, devemos utilizar o método post.-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <!--Com o type color, iremos gerar um campo com um seletor de cor. A propriedade value nesse caso, define a cor inicial contida no seletor.-->
+            <label for="cor">Cor: </label><input type="color" name="cor" id="cor" value="#ff0000">
+        </p>
+        <p>
+            <!--Com o type file, conseguimos carregar um arquivo de nosso explorador de arquivos para a página web.-->
+            <label for="arquivo">Arquivo: </label><input type="file" name="arquivo" id="arquivo">
+        </p>
+        <p>
+            <!--Com o type range, definimos um campo de índice contendo diferentes níveis de valor. Nesse caso, o type value o valor inicial, e min e max definem, respectivamente, o menor e maior valor que o ínidice pode chegar.-->
+            <label for="nivel">Nível de satisfação: </label><input type="range" name="nivel" id="nivel" min="1" max="10" value="5">
+        </p>
+        <p>
+            <input type="submit" value="Acessar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
