@@ -1,0 +1,46 @@
+
+/*Estilo para impressão*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding-top: 20px;
+}
+
+h1{
+    padding: 0 0 20px 20px;
+}
+
+h2{
+    padding-bottom: 20px;
+    font-size: 1.7em;
+}
+
+header ul{
+    padding: 10px 0 10px 0;
+}
+
+header li{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 1.3em;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+article::after{
+    content: "Documento estilizado para impressão.";
+}
