@@ -9,9 +9,10 @@
     <form action="cadastro.php" method="get">
         <p>
             <!--
-            O comando oninput é responssável por definir ações ao inserirmos valores nos inputs. Essas ações são feitas em javascript.
+            O comando oninput é responsável por definir ações ao inserirmos valores nos inputs. Essas ações são feitas em javascript.
             Com o comando soma.innerHTML, indicamos que iremos trabalhar no elemento HTML de id soma. A propriedade Number coverte o valor proveniente do input de uma string para o tipo number.
             -->
+            <!--Foi necessário utilizar o oninput em ambos os casos para que o resultado fosse alterado junto com o valor de cada um dos dois.-->
             <label for="num1">Primeiro número: </label><input type="number" id="num1" name="num1" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
         </p>
         <p>
@@ -22,6 +23,7 @@
             <label for="soma">Soma: </label><output id="soma" name="soma">0</output>
         </p>
         <P>
+            <!--Neste caso, será exibido no output o valor do índice com id nivel.-->
             <label for="nivel">Nível: </label><input type="range" name="nivel" id="nivel" min="1" max="10" value="3" oninput="indice.innerHTML = Number(nivel.value)"><output id="indice">5</output>
         </P>
     </form>

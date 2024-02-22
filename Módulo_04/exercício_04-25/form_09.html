@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,11 @@
 <body>
     <form action="cadastro.php" method="get">
         <p>
-            <label for="anoNasc">Ano de nascimento: </label><input type="number" name="anoNasc" id="anoNasc" min="1900" oninput="calcIdade()"><br>
+            <!--Nesse caso, vemos o exemplo de um oninput junto de uma função em javascript. O exemplo anterior (form_08) poderia ser resolvido chamando uma função em cada um dos inputs ao invés de repetir o mesmo código duas vezes.-->
+            <label for="anoNasc">Ano de nascimento: </label><input type="number" name="anoNasc" id="anoNasc" min="1900" max="2024" oninput="calcIdade()"><br>
         </p>
         <p>
-            <p>Sua idade é:</p><output id="idade">0</output>
+            <p>Sua idade é: <output id="idade">0</output></p>
         </p>
     </form>
 
