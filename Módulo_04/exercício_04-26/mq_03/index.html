@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Podemos também trabalhar com apenas um link ou com o CSS diretamente no arquivo index.html. Para isso devemos utilizar regras no CSS. A regra para definirmos diferentes media features é: @media
+    -->
+    <style>
+        /*Também podemos utilizar um link para CSS externo, unificando todos os estilos em um único arquivo. Isso é possível graças a regra @media.*/
+        @media all{
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                min-height: 100vh;
+                width: 100vw;
+                background-color: #233eff;
+            }
+
+            h1{
+                text-align: center;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
+                padding-top: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        @media screen and (orientation:landscape){
+            body{
+                background-image: url(../../imagens/cev-landscape.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left bottom;
+            }
+        }
+
+        @media screen and (orientation:portrait){
+            body{
+                background-image: url(../../imagens/cev-portrait.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center bottom;
+            }
+        }
+    </style>
+    <title>Media Queries</title>
+</head>
+<body>
+    <h1>Mudando a orientação do dispositivo</h1>
+</body>
+</html>
