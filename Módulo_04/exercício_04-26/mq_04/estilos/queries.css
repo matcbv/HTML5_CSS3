@@ -1,0 +1,29 @@
+@media screen and (max-width:480px){
+    #cel{
+        margin: auto;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:335px){
+    #cel{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:800px) {
+    #cel{
+        display: none;
+    }
+
+    #tab{
+        display: block;
+    }
+
+
+}
