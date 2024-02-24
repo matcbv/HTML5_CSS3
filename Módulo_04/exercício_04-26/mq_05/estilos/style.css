@@ -46,6 +46,7 @@ li{
 li:hover{
     background-color: lightgray;
     color: rgba(0, 0, 0, 0.61) ;
+    cursor: pointer;
 }
 
 main{
