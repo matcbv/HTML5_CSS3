@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    Com a propriedade media, definimos para que tipo de midia o link é associado.
-    - screen: Para tela.
-    - print: Para impressão.
-    - all: Todos os tipos de mídia (Tanto tela quanto impressão).
-    Dessa menira, temos que Media Query = Media Type (Exibidos acima) + Media Features (Características de mídia [Próximo exercício]).
-    -->
-    <link rel="stylesheet" href="estilos/style.css" media="screen">
-    <link rel="stylesheet" href="estilos/impressao.css" media="print">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/queries.css" media="screen">
     <title>Site para impressao</title>
 </head>
 <body>
     <header>
         <h1>Exemplo de site com Media Query</h1>
-        <menu>
+        <div>
+            <img id="imenu" src="imagens/menu-icon.png" alt="Ícone de menu" onclick="abreMenu()">
+        </div>
+        <menu id="navBar">
             <ul>
-                <li style="padding-left: 50px;">Primeiro</li>
+                <li>Primeiro</li>
                 <li>Segundo</li>
                 <li>Terceiro</li>
+                <li>Quarto</li>
+                <li>Quinto</li>
             </ul>
         </menu>
     </header>
@@ -39,5 +37,15 @@
             <br>
         </article>
     </main>
+
+    <script>
+        function abreMenu(){
+            if(navBar.style.display == 'block'){
+                navBar.style.display = 'none';
+            } else{
+                navBar.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+@media (max-width:600px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    #navBar{
+        display: none;
+        padding: 0;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    li{
+        font-size: 1.1em;
+        display: block;
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+    li:hover{
+        background-color: lightgray;
+    }
+
+    div{
+        width: 100%;
+        display: block;
+    }
+
+    #imenu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        padding: 10px 0 10px 0;
+    }
+
+    h1{
+        padding: 0 5px 20px 5px;
+    }
+
+    h2{
+        font-size: 1.4em;
+    }
+
+    main{
+        width: 60%;
+    }
+
+    main p{
+        font-size: 0.9em;
+    }
+
+    img:hover{
+        /*
+        Com a propriedade propriedade pointer, conseguimos definir o formato do ponteiro do mouse. Temos opção como:
+        - pointer: Ponteiro do mouse fica em formato de cursor de link.
+        - grabbing: O ponteiro do mouse fica em formato de cursor de arrastar e soltar.
+        - grabing: O ponteiro do mouse fica no formato de durante o arrastamento.
+        */
+        cursor: pointer;
+    }
+}
