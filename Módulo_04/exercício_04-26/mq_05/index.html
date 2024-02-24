@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="estilos/queries.css" media="screen">
     <title>Site para impressao</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Exemplo de site com Media Query</h1>
         <div>
+            <!--Para criarmos um menu retrátil, devemos utilizar javascript, criando uma função para tal.-->
             <img id="imenu" src="imagens/menu-icon.png" alt="Ícone de menu" onclick="abreMenu()">
         </div>
         <menu id="navBar">
@@ -39,8 +40,17 @@
     </main>
 
     <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 600){
+                navBar.style.display = 'block'
+            } else{
+                navBar.style.display = 'none'
+            }
+        }
+
+        /*Para criarmos uma função em javascript, utilizamos a palavra-chave function e utilizando uma condicional para verificar o valor atual da propriedade display.*/
         function abreMenu(){
-            var navBar = document.getElementById('navBar');
             if(navBar.style.display == 'block'){
                 navBar.style.display = 'none';
             } else {
