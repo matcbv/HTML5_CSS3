@@ -20,18 +20,23 @@
             
             Obs.: Tais propriedade só serão vistas no valor column ao trabalharmos com tamanhos de altura na caixa pai, podendo quebrar se a altura disponível se tornar menor que a altura total do conteúdo.
             */
+
+            /*
             flex-direction: row;
             flex-wrap: wrap;
+
+            Podemos encurtar as duas propriedades anteriores através do shorthand flex-flow
+            */
+            flex-flow: row wrap;
         }
         .item{
             background-color: lightblue;
             border: 1px solid black;
-            text-align: center;
             width: 150px;
         }
         /*No exemplo acima as caixas filhas serão quebradas para baixo e alinhadas da esquerda para a direita.*/
     </style>
-    <title>Flexbox</title>
+    <title>Flexbox 3</title>
 </head>
 <body>
     <h1>Nossa primeira flexbox</h1>
