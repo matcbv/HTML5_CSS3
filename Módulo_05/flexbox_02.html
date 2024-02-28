@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #container{
+            background-color: lightgray;
+            width: 100vw;
+            /*
+            Nossa flexbox ainda pode conter valores para definirmos seu comportamente na horizontal (row e row-reverse) e na vertical (), através da propriedade flex-direction:
+            
+            -row (Padrão): Responsável por organizar os itens em linha, seguindo da esquerda para a direita.
+            -row-verse: Realiza o inverso do valor row, alinhado os itens da direira para a esquerda.
+            -column: Organiza os itens em forma vertical, de cima para baixo.
+            column-reverse: Possui a função inversa do column, alinhando os itens de baixo pra cima.
+            */
+            /*Ao definirmos uma caixa como display flex, certas propriedades são repassadas a ela. Toda a flex box irá conter um main-axis (eixo-principal) e um cross-axis (eixo-transversal). Cada um desses eixos irá mudar de direção (vertical/horizontal) e sentido (direta/esquerda e cima/baixo). Ex.:
+            
+            --------------> maix-axis
+            |
+            |
+            |    row
+            |
+            v
+            cross-axis
+
+            -------//------//--------
+
+            main-axix <--------------
+                                    |
+                                    |
+                row-reverse         |
+                                    |
+                                    v
+                                    cross-axis
+            
+            -------//------//--------
+
+            --------------> cross-axis
+            |
+            |
+            |
+            |   column
+            |
+            |
+            v
+            main-axis
+
+            -------//------//--------
+
+             cross-axis
+            ^
+            |
+            |
+            |   column-reverse
+            |   
+            |
+            |
+            --------------> main-axis
+
+            Obs.: Ao início e fim de cada eixo, temos um ponto de início e fim, chamados de main-start/end e cross-start/end. Lembrando que o sentido do eixo que indica onde os pontos inicial e final serão posicionados.
+            */
+            display: flex;
+            flex-direction: column;
+        }
+        .item{
+            flex: auto;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Direções de alinhamento</h1>
+    <div id="container">
+        <div class="item">Conteudo 1</div>
+        <div class="item">Conteudo 2</div>
+        <div class="item">Conteudo 3</div>
+        <div class="item">Conteudo 4</div>
+        <div class="item">Conteudo 5</div>
+    </div>
+</body>
+</html>
