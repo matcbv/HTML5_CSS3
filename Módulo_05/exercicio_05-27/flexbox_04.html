@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #container{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        .item{
+            /*Definindo o flex com valor auto nessa situação, iria fazer com que as caixas filhas se adequassem ao tamanho da caixa pai.*/
+            flex: auto;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            width: 150px;
+        }
+        /*No exemplo acima as caixas filhas serão quebradas para cima e alinhadas da direita para a esquerda ocupando todo o espaço da caixa pai.*/
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Nossa primeira flexbox</h1>
+    <div id="container">
+        <div class="item">Conteudo 1</div>
+        <div class="item">Conteudo 2</div>
+        <div class="item">Conteudo 3</div>
+        <div class="item">Conteudo 4</div>
+        <div class="item">Conteudo 5</div>
+    </div>
+</body>
+</html>

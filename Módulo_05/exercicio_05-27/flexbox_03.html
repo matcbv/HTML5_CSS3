@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #container{
+            background-color: lightgray;
+            display: flex;
+            /*Para definirmos a forma que a caixa pai encapsulará as filhas, utilizaremos a propriedade flex-wrap. O conteúdo irá sempre quebrar no sentido do cross-axis e se espalhar para o sentido do main-axis. Temos os seguintes valores possíveis:
+            - nowrap (Padrão): Assegura que o conteúdo não vai se espalhar em mais de uma linha, se adaptando conforme a caixa pai.
+            - wrap: Permite que os itens quebrem em mais de uma linha.
+            - wrap-reverse: Possui a mesma função do wrap, porém a quebra de linha se dará ao sentido oposto do cross-axix.
+            */
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            width: 150px;
+        }
+        /*No exemplo acima as caixas filhas serão quebradas para baixo e alinhadas da esquerda para a direita.*/
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Nossa primeira flexbox</h1>
+    <div id="container">
+        <div class="item">Conteudo 1</div>
+        <div class="item">Conteudo 2</div>
+        <div class="item">Conteudo 3</div>
+        <div class="item">Conteudo 4</div>
+        <div class="item">Conteudo 5</div>
+    </div>
+</body>
+</html>
