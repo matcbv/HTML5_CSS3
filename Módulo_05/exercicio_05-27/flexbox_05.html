@@ -8,36 +8,59 @@
             margin: 0;
             padding: 0;
             text-align: center;
-        }
-        #container{
-            background-color: lightgray;
+            background-color: cadetblue;
             width: 100vw;
-            display: flex;
+            height: 100vh;
         }
-        .item{
-            flex: auto;
-            background-color: lightblue;
-            border: 1px solid black;
-            flex-flow: row nowrap;
-            /*
-            A propriedade justify-content alinha o conteúdo de uma flex-box (caixa pai) em relação ao main-axis. Ele possui valores como:
-            - flex-start: O conteúdo ficará sempre alinhado ao lado do main-start.
+        
+        /*
+        A propriedade justify-content alinha o conteúdo de uma flex-box (caixa pai) em relação ao main-axis. Ele possui valores como:
 
-            
-            */
-            justify-content: ;
+        - flex-start: O conteúdo ficará sempre fixado no main-start.
+        - flex-end: O conteúdo ficará sempre fixado no main-end.
+        - center: Deixa o conteúdo centralizado na flex-box, distribuindo igualmente os espaços vazios em torno do mesmo.
+        - space-between: O primeiro e último filho serão fixadas no início (main-start) e fim (main-end) da caixa pai, respectivamente. Os filhos restantes serão espaçados uniformemente de acordo com o espaço restante da caixa pai.
+        - space-evenly: Espaçamento entre os itens é igualmente distribuído por toda a caixa pai (), sem que a primeira e última caixas sejam fixadas no início e fim do pai.
+        - space-around: Irá dividir o espaço disponível da caixa pai em partes igual, de acordo com a quantidade de caixas filho existentes. No centro de cada um desses espaços, serão colocadas as caixas filho.
+
+        --------//-------//--------
+
+        Para alinhamentos no eixo trannsversal (cross-main), devemos definir uma altura para nossa flex-box e utilizarmos a propriedade align-items. Ela possui valores como:
+
+        - stretch (Padrão): Estica as caixas filho para que preencham o espaço disponível da caixa pai.
+        - flex-start: O conteúdo ficará sempre fixado no cross-start.
+        - flex-end: O conteúdo ficará sempre fixado no cross-end.
+        - center: Divide a altura restante da caixa pai em partes iguais, centralizando as caixas filho na caixa pai.
+        */
+        
+        main{
+            display: flex;
+            width: 50%;
+            height: 50%;
+            background-color: darkcyan;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            width: 50%;
+            height: 50%;
+            background-color: seagreen;
+        }
+
+        p{
+            margin: 0;
+            color: white;
         }
     </style>
     <title>Flexbox</title>
 </head>
 <body>
-    <h1>Nossa primeira flexbox</h1>
-    <div id="container">
-        <div class="item">Conteudo 1</div>
-        <div class="item">Conteudo 2</div>
-        <div class="item">Conteudo 3</div>
-        <div class="item">Conteudo 4</div>
-        <div class="item">Conteudo 5</div>
-    </div>
+    <main>
+        <section>
+            <p>Caixa filho</p>
+        </section>
+    </main>
 </body>
 </html>
