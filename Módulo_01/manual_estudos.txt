@@ -1,4 +1,3 @@
-
 Exercício 01 - Criando nossas primeiras estruturas semânticas (h1 e p) e entendo os conceitos de viewport e initial-scale.
 
 Exercício 02 - Aprendendo a pular linhas e adicionar símbolos e emojis em nosso texto.
