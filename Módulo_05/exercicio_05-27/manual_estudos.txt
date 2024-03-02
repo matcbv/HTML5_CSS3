@@ -1,1 +1,1 @@
-Exercício 27 - Aprendendo a lidar com responsividade através de flexbox.
+Exercício 27 - Aprendendo a lidar com responsividade através de flexbox, conhecendo todas as suas funcionalidades, aplicações e modos de utilização.

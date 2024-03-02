@@ -1,0 +1,11 @@
+Exercício 16 - Modos de representação de cores.
+
+Exercício 17 - Pondo em práticas alguns conceitos vistos anteriormente
+
+Exercício 18 - Lidando com fontes e suas propriedades / Google Fonts.
+
+Exercicio 19 - Trabalhando com IDs e classes.
+
+Exercicio 20 - Conhecendo as pseudo-classes e pseudo-elementos.
+
+Exercício 21 - Propriedades da tag img / Adaptando uma imagem.
