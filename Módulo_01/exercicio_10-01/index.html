@@ -16,13 +16,13 @@
         <img src="imagens/img_pc.jpg" alt="Paisagem">
     </picture>
     <h1>Lidando com arquivos de áudio</h1>
-    <!--Para lidarmos com arquivos de audio, temos duas opções:Utilizarmos o-->
+    <!--Para lidarmos com arquivos de audio, temos duas opções: Utilizarmos o-->
     <h2>Primeiro modo:</h2>
     <!--controls: Cria um menu de áudio apr o usuário interagir; autoplay: Inicia o áudio automaticamente assim que a página é carregada (Deve estar com o preload como auto para funcionar); loop: Reinicia automaticamente o áudio quando ele finaliza.-->
     <!--Obs.: Autoplay não funcionando no momento desse estudo 26/01/24-->
     <audio src="midia/Boom Bap Flick - Quincas Moreira.mp3" controls autoplay loop></audio>
     <h2>Segundo modo:</h2>
-    <!--O parâmetro preload, indica como o arquivo em questão será pré-carregado: auto (padrão): Site só será carregado por completo, quando todo o arquivo tiver sido baixado; metadata: Baixa algumas informações básicas do arquivo com antecedência; none: Não baixa naa do arquivo, somente quando o usuário interage com ele.-->
+    <!--O parâmetro preload, indica como o arquivo em questão será pré-carregado: auto (padrão): Site só será carregado por completo, quando todo o arquivo tiver sido baixado; metadata: Baixa algumas informações básicas do arquivo com antecedência; none: Não baixa nada do arquivo, somente quando o usuário interage com ele.-->
     <audio preload="metadata" controls>
         <!--A diferença entre os prâmetros src e srcset, é que o src define o arquivo principal, enquanto o srcset informa outras opções para serem utilizadas.-->
         <!--Ao lidarmos com arquivos de áudio, o navegador pode ou não ter compatibilidade com seu tipo de mídia. Portanto, é recomendado disponibilizar mais de uma opção.-->
