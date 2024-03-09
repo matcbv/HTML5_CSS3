@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+        #container{
+            background-color: cadetblue;
+            display: flex;
+            /*Para utilizarmos as propriedades flex-shrink e flex-grow, é acoselhado definir o valor nowrap, para que o item possam variar de tamanho sem quebrar, por mais que também funcione em alguns caso do wrap.*/
+            flex-flow: row nowrap;
+        }
+        .itens{
+            flex-basis: 200px;
+            background-color: chartreuse;
+            border: 1px solid black;
+            margin-right: 10px;
+            padding: 20px 0;
+        }
+        #item_01{
+            /*O valor flex-shrink é responsável por definir se o item pode ou não encolher, enquanto flex-growth define se ele pode ou não aumentar. Os valores padrão de cada um são:
+            - 1 (padrão para o flex-shrink): Indica positivo para a propriedade.
+            - 0 (padrão para o flex-growth): Indica negativo para a propriedade.
+            
+            Também podemos realizar uma proporção no espaçamento dos itens contidos no pai:
+
+            Ex. 1:
+            Se dois itens tiverem a propriedade flex-shrink com valor 1 e o terceiro com valor 2, o terceiro vai ocupar metade do espaço que cada um dos outros dois ocupa. Dessa maneira, se o container pai possui 250px, os dois primeiros ocuparão 100px e o terceiro 50px.
+
+            Ex. 2:
+            Se o primeiro tiver o valor 0, o segundo valor 1 e o terceiro com valor 2, utilizando a propriedade flex-growth, o primeiro não irá aumentar, o segundo irá aumentar e o terceiro irá aumetar, tendo o dobro do tamanho do segundo. Logo, com o container pai ocupando 250px, o primeiro irão manter o valor definido pelo 
+
+            Dessa forma, percebemos que os valores indicarão a proporção de espaçamento de cada um dos itens dentro do container pai. Os valores não se limitam a apenas 0, 1 e 2, onde podemos utilizar 3 e até 4 para distribuírmos nosso conteúdo da maneira que nos for conveniente.
+            */
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        #item_02{
+            flex-shrink: 1;
+            flex-grow: 3;
+        }
+        #item_03{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        #item_04{
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <div id="container">
+        <div class="itens" id="item_01">
+            <p>Div 01</p>
+        </div>
+        <div class="itens" id="item_02">
+            <p>Div 02</p>
+        </div>
+        <div class="itens" id="item_03">
+            <p>Div 03</p>
+        </div>
+        <div class="itens" id="item_04">
+            <p>Div 04</p>
+        </div>
+    </div>
+</body>
+</html>

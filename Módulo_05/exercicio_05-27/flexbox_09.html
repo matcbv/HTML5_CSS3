@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color: cadetblue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        /*
+        O valor flex-basis define o tamanho que um item irá possuir no eixo principal (main-axis caso seja row, ou no cross-axis caso seja column) de seu container flex pai. Para essa propriedade temos as possíveis opções:
+        - auto (padrão): O tamanho do item é determinado pelo tamanho de seu conteúdo.
+        - tamanho em px: Podemos determinar um tamanho para nossos itens em pixels. Esse tamanho será aplicado caso o container flex pai tenha tal espaço disponível. Caso o tamanho do pai seja menor que o total ocupado pelos filhos, esses irão se adaptar para o tamanho disponível, dividindo-se igualmente ao longo dele.
+        Ex.: Três itens de 250px irão ocupar 750px do container pai. Se o container pai for reduzido para 600px, os filhos agora irão possuir 200px cada.
+
+        Obs.: Caso definíssemos o flex-wrap para wrap, as linhas serão quebradas e o itens irão manter o tamanho deinido no flex-basis até onde for possível.
+        */ 
+        .item{
+            flex-basis: 250px;
+            background-color: chartreuse;
+            border: 1px dotted black;
+            margin-right: 10px;
+            padding: 20px 0;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+    <title>Flexbox</title>
 </head>
 <body>
-    
+    <div id="container">
+        <div class="item">
+            <p>Div 01</p>
+        </div>
+        <div class="item">
+            <p>Div 02</p>
+        </div>
+        <div class="item">
+            <p>Div 03</p>
+        </div>
+    </div>
 </body>
 </html>
