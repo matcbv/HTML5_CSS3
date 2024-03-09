@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: cadetblue;
+            width: 100vw;
+            height: 100vh;
+        }
+        #container{
+            background-color: darkcyan;
+            width: 80vw;
+            height: 80vh;
+            margin-top: 20px;
+            display: flex;
+            align-items: self-start;
+        }
+        .itens{
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        /*A propriedade align-self, assim como order, só é aplicável a itens flex, não a containers. Sua função é alinhar caa um dos itens individualmente ao longo do eixo transversal (cross-axis). Essa propriedade possui os valores:
+        - auto: Herda o valor de alinhamento do pai (container flex).
+        - flex-start: Fixa o item no cross-start.
+        - flex-end: Fixa o item no cross-end.
+        - center:  Centraliza os itens no cross-axis (eixo transversal).
+        - stretch: Faz o item preencher todo o espaço disponível na linha ou coluna.
+        */
+        #div_a{
+            align-self: auto;
+        }
+        #div_b{
+            align-self: flex-start;
+        }
+        #div_c{
+            align-self: flex-end;
+        }
+        #div_d{
+            align-self: center;
+        }
+        #div_e{
+            align-self: stretch;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="itens" id="div_a">A</div>
+            <div class="itens" id="div_b">B</div>
+            <div class="itens" id="div_c">C</div>
+            <div class="itens" id="div_d">D</div>
+            <div class="itens" id="div_e">E</div>
+        </div>
+    </main>
+</body>
+</html>

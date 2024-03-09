@@ -1,3 +1,3 @@
-Exercício 22 - Trabalhando com imagens em tela de fundo e aprendendo sobre todas as propriedades e valores relacionadas.
+Exercício 22 - Trabalhando com imagens em tela de fundo e aprendendo sobre todas as propriedades e valores relacionadas. Extra: position: static, absolute, relative e sticky (fundo_06).
 
-Exercício 23 - Aprendendo a trabalhar com tabelas. Conhecendo a semântica e propriedades muito utilizadas em conjunto delas. Extra: nth-child().
+Exercício 23 - Aprendendo a trabalhar com tabelas. Conhecendo a semântica e propriedades muito utilizadas em conjunto delas. Extra: nth-child() (tabela_02) e overflow (tabela_06).

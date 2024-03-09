@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: cadetblue;
+            width: 100vw;
+        }
+        main{
+            width: 80vw;
+            background-color: darkcyan;
+            flex-flow: row nowrap;
+        }
+        #container{
+            margin-top: 20px;
+            display: flex;
+        }
+        .itens{
+            display: inline-block;
+            background-color: white;
+            padding: 50px;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <!--Através da propriedade order, podemos ordenar o conteúdo dos elementos contidos dentro de um container flex. Por padrão, o valor de order dos elementos é 0. Sempre que os elementos possuírem o mesmo valor de order, será preferenciado o elemento que vier primeiro no HTML.
+            Obs.: A propriedade order só é aplicável aos itens no interior do container flexível.
+            -->
+            <div class="itens" style="order: 0;">A</div>
+            <div class="itens" style="order: -1;">B</div>
+            <div class="itens" style="order: 2;">C</div>
+            <div class="itens" style="order: 3;">D</div>
+            <div class="itens" style="order: -2;">E</div>
+        </div>
+    </main>
+</body>
+</html>

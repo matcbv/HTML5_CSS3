@@ -20,11 +20,10 @@
             background-color: darkcyan;
             flex-flow: row wrap;
             justify-content: center;
-            align-items: flex-start;
             /*
-            A propriedade align-content irá informar a maneira com que os itens encapsulados serão alinhados. É recomandado utilizá-la quando definimos o valor wrap para a propriedade flex-wrap, enquanto para o valor nowrap, é recomendado a propriedade align-items. Temos os possíveis valores para align-content:
+            A propriedade align-content irá informar a maneira com que os itens encapsulados serão alinhados, sendo utilizada quando definimos o valor wrap para a propriedade flex-wrap, enquanto para o valor nowrap, a propriedade align-items é quem se encaixa. Temos os possíveis valores para align-content:
             
-            - scretch (Padrão): Dividrá o espaço da flex-box para de acordo com o número de linhas/colunas definidas, fazendo-os ocupar todo o espaço disponível dessas divisões.
+            - scretch (Padrão): Dividrá o espaço da flex-box para de acordo com o número de linhas/colunas definidas, fazendo-os ocupar todo o espaço disponível dessas linhas/colunas.
             - flex-start: O conteúdo ficará sempre fixado no cross-start.
             - flex-end: O conteúdo ficará sempre fixado no cross-end.
             - center: Deixa o conteúdo centralizado na flex-box, distribuindo igualmente os espaços vazios (no eixo transversal) em torno do mesmo.
@@ -34,13 +33,12 @@
 
             Obs.: Todos as propriedades vistas desde o primeiro exercício até agora são somente aplicáveis aos container, e não aos itens. Veremos as propriedades para os itens posteriormente.
             */
-            align-content: stretch;
+            align-content: center;
         }
 
         .itens{
             background-color: white;
-            width: 300px;
-            height: 100px;
+            padding: 80px;
             border: 1px solid black;
         }
 
