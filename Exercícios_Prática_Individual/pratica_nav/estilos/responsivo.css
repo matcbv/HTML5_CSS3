@@ -1,0 +1,36 @@
+@media (max-width: 900px){
+    #div_img{
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 740px){
+    section{
+        justify-content: center;
+    }
+    
+    ul{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #div_img{
+        height: 400px;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    section{
+        padding: 15px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px){
+    #div_img{
+        height: 300px;
+    }
+}
