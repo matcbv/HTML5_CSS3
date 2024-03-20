@@ -1,0 +1,87 @@
+<!--
+    A Seguir, veremos algumas das pseudo-clases mais utilizadas em CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #div_01{
+
+            padding-top: 50px;
+            width: 100%;
+            height: 100px;
+            background-color: lightgray;
+        }
+
+        a{
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        /*A pseudo-class link é responsável por alterar elementos do tipo link que ainda não foram visitados.*/
+        a:link{
+            color: black
+        }
+
+        /*A pseudo-class visited é responsável por alterar elementos do tipo link que já foram visitados.*/
+        a:visited{
+            color: cadetblue;
+        }
+
+        /*A pseudo-class active é responsável por alterar elementos do tipo link que já estão sendo acionados.*/
+        a:active{
+            color: darkorange;
+        }
+
+        /*A pseudo-class hover é responsável por alterar elementos que são sobrepostos pelo ponteiro do mouse*/
+        a:hover{
+            text-decoration: underline;
+        }
+
+        #div_02{
+            margin: auto;
+            padding-top: 50px;
+            width: 100%;
+            height: 100px;
+            background-color: darkcyan;
+        }
+
+        input{
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+
+        /*A pseudo-classe focus é responsável por alterar um input quando está em foco.*/
+        input:focus{
+           border: 2px solid black;
+           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.37);
+        }
+    </style>
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <div id="div_01">
+        <a href="#">Link de teste</a>
+    </div>
+    <div id="div_02">
+        <div style="display: block; margin: auto;  width: fit-content">
+            <label for="text_box">Caixa de texto: </label><input type="text" name="text_box" id="text_box" size="30" placeholder="Digite algo..."/>
+        </div>
+    </div>
+</body>
+</html>

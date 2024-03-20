@@ -8,10 +8,10 @@
 <body>
     <h1>Primeiro formulário</h1>
     <!--Todo formulário de começar e terminar com as tags <form> e </form>.-->
-    <!--A propriedade autocomplete é responsável por determinar a aparição do campo de autocompletar dos campos do formulário. COm o valor off ele é desativado, já com on, é ativado.-->
+    <!--A propriedade autocomplete é responsável por determinar a aparição do campo de autocompletar dos campos do formulário. Com o valor off ele é desativado, já com on, é ativado.-->
     <!--A propriedade action é um atributo de formulário HTML usado para especificar o URL para o qual os dados do formulário serão enviados.-->
     <form autocomplete="off" action="cadastro.php">
-        <!--Para criarmos campose botões em nosso formulário, devemos utilizar a tag <input>. Com a propriedade type, definimos qual o tipo de conteúdo que o campo será preenchido. Ex.: text, email, number, password.-->
+        <!--Para criarmos campos e botões em nosso formulário, devemos utilizar a tag <input>. Com a propriedade type, definimos qual o tipo de conteúdo que o campo será preenchido. Ex.: text, email, number, password.-->
         <!--As tags podem e geralmente serão utilizada dentro de divs. Usaremos a tag <p> somente para os exemplos desse exercício.-->
         <p>
             <!--O atributo id é usado para identificar exclusivamente um elemento na página. Cada id em um documento HTML deve ser único, ou seja, não deve haver dois elementos com o mesmo id no mesmo documento. É frequentemente usado para estilização com CSS e para referenciar elementos com JavaScript.
@@ -21,7 +21,7 @@
             <!--A tag <label>, referencia um campo de preenchimento a uma descrição. Essa referência é feita através da propriedade for, que irá identificar a tag <input> que tiver o id de mesmo nome ao passado à ela.
             Obs.: Também temos a vantagem que, ao clicar na descrição do campo, o cursor fica no input correspondente.
             -->
-            <label for="nome">Nome:</label><input type="" name="nome" id="nome">
+            <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
         </p>
         <p>
             <label for="sobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome">

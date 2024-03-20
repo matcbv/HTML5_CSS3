@@ -9,6 +9,7 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="estado">Estado: </label>
+            <!--A tag select irá criar um campo de seleção contendo diversar opções, podendo ser separadas em grupos. Conseguimos criar grupos de opções através da tag <outgroup>, passando uma legenda através da propriedade label.-->
             <select name="estado" id="estado">
                 <option value="">---Escolha---</option>
                 <optgroup label="Região Sudeste">
@@ -26,9 +27,10 @@
             </select>
         </p>
         <p>
-            <!--Com a tag <datalist>, podemos criar um campo preenchível mas que também possui opções a serem escolhidas. Utilizamos essa tag em conjunto com a tag input. Para relacionarmos as duas tags, tevemos utilizar a propriedade list no input, passando como valor, o id da datalist.-->
+            <!--Com a tag <datalist>, podemos criar um campo preenchível mas que também possui opções a serem escolhidas. Utilizamos essa tag em conjunto com a tag input. Para relacionarmos as duas tags, devemos utilizar a propriedade list no input, passando como valor, o id da datalist.-->
             <label for="profissao">Profissão: </label>
             <input type="text" name="profissao" id="profissao" list="profissoes">
+            <!--A tag datalist contém uma lista de opções para serem preenchidas no input relacionado.-->
             <datalist id="profissoes">
                 <option>Professor(a)</option>
                 <option>Médico(a)</option>

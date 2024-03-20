@@ -1,5 +1,7 @@
-Exercício 24 - Aprendendo todas as funcionalidades da tag iframe, junto de seus atributos (srcdoc, sandbox etc.) e valores. Também foi introduzido o uso do atributo name.
+Exercício 24 - Aprendendo todas as funcionalidades da tag iframe, junto de seus atributos (srcdoc, sandbox etc.) e valores.
+Também foi introduzido o uso do atributo name.
 
-Exercício 25 - Aprendendo a utilizar formulários. Veremos todas as tags e seus sentidos semânticos, junto dos atributos e valores relacionados a elas. Conheceremos também os diferentes métodos de requisição HTTP.
+Exercício 25 - Aprendendo a utilizar formulários. Veremos todas as tags e seus sentidos semânticos, junto dos atributos e valores relacionados a elas.
+Conheceremos também os diferentes métodos de requisição HTTP.
 
 Exercício 26 - Introdução ao conceito de responsividade através das media queries. Veremos todas as maneiras de trabalharmos com elas.
