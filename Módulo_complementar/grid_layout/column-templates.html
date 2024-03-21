@@ -1,0 +1,43 @@
+<!--Estaremos vendo a seguir, os grid layouts. Esses, são estrutura de layout usadas para organizar e alinhar elementos em uma página da web de forma consistente. Eles consistem em linhas e colunas que formam uma grade invisível, na qual os elementos da página são posicionados.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #grid{
+            display: grid;
+            /*
+            Com a propriedade grid-template-columns, definimos o número de colunas e o seu comprimento. Cada espaço simboliza uma nova coluna, e o valor indica o comprimento que elas terão, podendo ser em px, % e fr.
+            fr (fragment) é um tipo de unidade de medida para o Grid Layout. Ex.: 2fr significa que a coluna vai ter 2 partes da largura disponível do container pai.
+ 
+            No exemplo abaixo, teremos uma coluna com 200px e outras duas com 1 e 2 fragmentos, dividindo o restante na proporção 1:2.
+            */
+            grid-template-columns: 200px 1fr 2fr;
+
+            /*A propriedade gap define o espaçamento entre as colunas.*/
+            gap: 20px;
+
+            /*Podemos realizar essa mesma repartição com a grid-template-row, que será aplicados em linhas.*/
+        }
+
+        #grid div{
+            background-color: dimgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+</body>
+</html>

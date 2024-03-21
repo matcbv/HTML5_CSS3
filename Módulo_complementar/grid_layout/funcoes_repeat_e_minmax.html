@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #grid{
+            /*
+            Caso nossa grid tenha muitas colunos, podemos utilizar uma função do CSS chamada repeat. Ela funciona da seguinte maneira: repeat(número de repetições, valor 1, valor2, valor3 ...). Ex.:
+
+            grid-template-columns: repeat(2, 1fr 2fr);
+
+            O grid acima terá duas repetições de 1fr e 2fr. Isso significa que a primeira coluna da repetição vai possui metade do comprimenro da segunda.
+
+            Temos também a função minmax. Essa, irá criar colunas de acordo com um valor mínimo e máximo informados.
+            */
+            display: grid;
+            max-width: 1200px;
+            /*
+            A função minmax definirá o valor mínimo e máximo que cada elemento terá dentro do grid.
+
+            Obs.: O valor auto-fill é responsável por definir que as colunas ocupem todo o espaço disponível do contêiner
+            */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+            /*No caso acima, as colunas terão um tamanho mínimo de 200px, e quando tiverem um espaço extra disponível (quando tiverem comprimento menor que 400px, por exemplo.), serão dimensionadas para ocupar todo o espaço com o 1fr. Como definimos um max-width de 1200px, teremos um máximo de 6 colunas, e caso o comprimento do documento seja menor que 400px, teremos só uma coluna.*/
+        }
+
+        #grid div{
+            background-color: dimgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+</body>
+</html>
