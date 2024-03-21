@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: 200px 1fr 2fr;
+            gap: 20px;
+        }
+
+        #grid div{
+            background-color: dimgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        #grid div:nth-child(5){
+            background-color: black;
+            /*Podemos ainda definir o início e fim de um elemento em nossa grid. Podemos tanto definir o comportamento em linha, quando em coluna, através das propriedades grid=column-start, grid-column-end, grid-row-start e grid-row-end*/
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            color: white;
+        }
+    </style>
+    <title>Grid start e end</title>
+</head>
+<body>
+    <div id="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+    </div>
+</body>
+</html>
