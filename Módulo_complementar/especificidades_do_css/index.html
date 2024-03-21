@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        No CSS, temos as regras de especificidade, as quais irão determinar qual estilo será aplicado a determinado elemento. A ordem a ser seguida é a seguinte:
+        
+        !importante
+        style
+        id ---------------------------------------------------------- 0
+        classes atributos e pseudo-classes -------------------------- 0
+        elementos e pseudo-elementos -------------------------------- 0
+
+        Obs.: A palavra important antecedida por um !, indica que aquele estilo deve sobrepor qualquer outro estilo aplicado aquele elemento.
+
+        A cada especifidade que é utilizada, é acrescido um nivel no contador. O seletor com maior especifidade aplicará os estilos. Podemos ver o nível de especifidade de um seletor passando o mouse sobre ele. Ex.:
+        */
+
+        p{  /*Especifidade: (0, 0, 1)*/
+            background-color: blue;
+        }
+
+        #texto{ /*Especifidade: (1, 0, 0)*/
+            background-color: yellow;
+        }
+
+        p#texto{ /*Especifidade: (1, 0, 1)*/
+            background-color: red;
+        }
+
+        #id_container.class_container p#texto{ /*Especifidade: (2, 1, 1)*/
+            background-color: green;
+        }
+
+        p{ /*!important irá sobrepor todos os estilos anteriores*/
+            background-color: purple !important;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="class_container" id="id_container">
+        <!--Caso apliquemos a propriedade style diretamente em nosso elemento, todos os estilos serão sobrepostos.-->
+        <p id="texto" style="background-color: grey;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nesciunt facere delectus laudantium temporibus. Odio ut quaerat, totam mollitia, nam harum commodi id autem cupiditate ab eius nisi enim tenetur?</p>
+    </div>
+</body>
+</html>

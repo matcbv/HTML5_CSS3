@@ -1,0 +1,44 @@
+----------------------------- auto -----------------------------
+
+O valor auto pode ter diversas funções dependendo da propriedade a que é aplicado. Ex.: 
+
+margin: auto; - Responsável por centralizar uma caixa após adicionar margens automaticamente em ambas os lados. Só é aplicado caso a caixa seja display block.
+width: auto; - Responsável por deixar a largura de uma caixa do tamanho de seu conteúdo. 
+heigh: auto; - Responsável por deixar a altura de uma caixa do tamanho do seu conteúdo. 
+
+
+----------------------------- 100% -----------------------------
+
+Assim como o auto, os 100% podem ter diversas funções dependendo do contexto em que é aplicado. Ex.: 
+
+width: 100%; - Tem a função de fazer com que a caixa filho ocupe 100% da largura disponibilizada pela caixa pai. 
+height: 100%; - Tem a função de fazer com que a caixa filho ocupe 100% da altura disponibilizada pela caixa pai. 
+
+ 
+
+----------------------------- min width/height x max width/height -----------------------------
+
+O uso de min-with/heigth e max- width/height é algo importante de ser bem aplicado. A seguir conheceremos os conceitos de cada um: 
+
+min-width/heigth: Definimos a largura/altura mínima que uma caixa possuirá. Caso a caixa ultrapasse o valor definido, a largura/altura se adequará para cobrir todo o conteúdo presente na caixa. 
+
+max-width/height: Definimos a largura/altura máxima que uma caixa possuirá. Caso a caixa ultrapasse o valor definido, o conteúdo se ajustará para caber no valor definido, caso contrário, a largura/altura será a mesma do conteúdo da caixa. 
+
+ 
+
+----------------------------- vw e vh -----------------------------
+
+Os valore vw e vh são muito importantes ao trabalharmos com estilos, principalmente ao lidar com conteúdos responsivos. Veremos a seguir o significado de cada um deles: 
+
+vw: Ao lidarmos com valores de vw, estaremos nos referindo a porcentagem da largura da viewport (Área visível da página). 
+vh: Ao lidarmos com valores de vh, estaremos nos referindo a porcentagem da altura da viewport. 
+
+Ex.: 
+
+body{min-width: 100vh;}
+
+Com o seletor acima, definimos que a altura mínima do corpo da nossa página, terá 100% da altura do viewport.
+
+----------------------------- html x body -----------------------------
+
+... 
