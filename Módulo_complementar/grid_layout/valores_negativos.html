@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         #grid{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            /*
-            A propriedade grid-template-rows definioms o número de linhas e seu comportamente em nosso grid.
-            Podemos utilizar junto a ela as funções e valores vistos anteriormente, a diferença é que iremos lidar com linhas ao invés de colunas.
-            */
-            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             gap: 20px;
         }
 
@@ -21,8 +17,15 @@
             border: 1px solid black;
             padding: 20px;
         }
+
+        div:nth-child(1){
+            /*Ao utilizar valores negativos, estaremos lidando com os elementos em sentido contrário, sendo -1 o último, -2 o penúltimo, e assim por diante.*/
+            grid-column: 1 / -1;
+            grid-row: 1 / -2;
+            /*Obs.: Não é permitido utilizar span com valores negativos.*/
+        }
     </style>
-    <title>Row templates</title>
+    <title>Trabalhando com nomes</title>
 </head>
 <body>
     <div id="grid">

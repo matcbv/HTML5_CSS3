@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 100px 1fr 100px;
+            /*Com a propriedade grid-template-areas, iremos definir as repartições que cada área que nossa página terá. Para cada linha, devemos ter o número de colunas que foi definido. No exemplo abaixo, como definimos nosso documento com colunas e três linhas, teremos que indicar quantas colunas cada área irá ocupar em cada uma das linhas.*/
+            grid-template-areas: 
+                'header header'
+                'nav main'
+                'footer footer';
+                box-sizing: border-box;
+            font-size: 1.2em;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            grid-area: header;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            grid-area: nav;
+            align-items: center;
+            background-color: cornsilk;
+            padding: 30px;
+        }
+        main{
+            grid-area: main;
+            background-color: grey;
+            padding: 50px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: cornflowerblue;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+    <title>Grid templates areas</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <p>Exemplo menu</p>
+    </header>
+    <nav>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum, perspiciatis dolorum natus error incidunt inventore, autem possimus ipsam non enim? Voluptate explicabo dolorem corporis mollitia qui, doloremque eaque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt explicabo voluptatibus necessitatibus hic error dicta ad id quidem perspiciatis, delectus modi maxime doloremque, dolores inventore! Omnis ex quisquam ut?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, expedita. Voluptas, nulla amet nobis blanditiis quod neque nesciunt commodi, culpa cupiditate possimus soluta, placeat doloremque exercitationem quia saepe quasi. Facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit quo veniam dolores at hic, soluta vel eos, voluptate unde architecto similique harum nesciunt tempora nisi inventore fugiat enim ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores consequatur pariatur, voluptate voluptatum sit nemo in quod quis magni laudantium earum, eum architecto repellat eligendi commodi dignissimos facilis animi officiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptate odit dignissimos. Modi eum id, iure sed accusamus hic accusantium ducimus in nesciunt qui facilis quam voluptas quas nisi aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quis ullam nulla a minus corporis at suscipit. Vero consectetur maxime nesciunt mollitia. Recusandae officiis facilis ab sapiente vel doloribus consequuntur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab iure nisi aperiam minus laboriosam inventore expedita? Dignissimos vel itaque sed sapiente repellendus pariatur quia magnam. Ut itaque eligendi quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nobis adipisci sit nisi consequuntur, exercitationem voluptatum commodi est voluptates error ratione corrupti maiores eaque dolore, cupiditate deserunt architecto. Blanditiis, reprehenderit.</p>
+    </main>
+    <footer>Rodapé</footer>
+</body>
+</html>

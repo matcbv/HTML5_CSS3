@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /*Através de [], podemos dar nomes as nossas linhas e colunas, utilizando esses nomes para personalizá-los.*/
+            grid-template-rows: [um] 1fr [dois] 2fr [tres] 1fr [quatro];
+            gap: 20px;
+        }
+
+        #grid div{
+            background-color: dimgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        div:nth-child(1){
+            /*Aqui vemos o uso dos nomes criados anteriormente.*/
+            grid-row: um / tres;
+        }
+
+        div:nth-child(4){
+            /*Utilizando desta maneira, indicamos que nosso elemento ocupara da segunda coluna mais 2, indo da segunda até a 4 coluna.*/
+            grid-column: 2 / span 2;
+        }
+    </style>
+    <title>Trabalhando com nomes</title>
+</head>
+<body>
+    <div id="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+</body>
+</html>
