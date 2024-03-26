@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        #container{
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        #content{
+            width: 250px;
+            height: 150px;
+            margin: auto;
+            background-color: darkcyan;
+            /*
+            A propriedade animation é responsável por realizar animações com elementos em CSS3. Ela pode possuir os seguinte valores:
+
+            animation: name duration timing-function delay iteration-count direction fill-mode; 
+
+            - name: O nome da animação definido usando a regra @keyframes.
+
+            - duration: A duração da animação, especificada em segundos (s) ou milissegundos (ms).
+
+            - timing-function (valor padrão: none): A função de temporização da animação, que controla a aceleração e desaceleração da animação. Pode ser ease, linear, ease-in, ease-out, ease-in-out ou uma função de temporização personalizada definida com cubic-bezier().
+
+            - delay (valor padrão: 0s): O tempo de espera antes da animação começar, especificado em segundos (s) ou milissegundos (ms)
+
+            - iteration-count (valor padrão: 1): O número de vezes que a animação deve ser executada. Pode ser um número inteiro, infinite para executar indefinidamente ou initial para usar o valor padrão.
+
+            - direction: A direção da animação. Pode ser normal, reverse, alternate ou alternate-reverse.
+
+                Sobre os valores de direction:
+
+                - normal: A animação é reproduzida de acordo com a ordem dos keyframes, começando do início para o fim (do 0% para o 100%).
+
+                - reverse: A animação é reproduzida de trás para frente, ou seja, do fim para o início (do 100% para o 0%).
+
+                - alternate: A animação é reproduzida alternadamente para frente e para trás. Isso significa que a animação é reproduzida normalmente na primeira iteração (0% até 100%), depois reversa na próxima (100% até 0%), e assim sucessivamente.
+
+                - alternate-reverse: Semelhante ao alternate, mas a primeira iteração começa reproduzindo a animação de trás para frente (100% até 0% e depois 0% até 100%).
+
+            - fill-mode: Como a animação deve aplicar estilos aos elementos antes e depois da execução da animação. Pode ser none, forwards, backwards ou both.
+
+            Sobre os valores do fill-mode:
+
+                - none: Nenhum estilo é aplicado antes ou depois da animação. Isso significa que o elemento retorna ao seu estado inicial antes da animação e permanece nesse estado após a animação terminar.
+
+                - forwards: Os estilos da última etapa da animação (keyframe) são aplicados após a animação terminar e são mantidos nesse estado. Antes do início da animação, o elemento permanece em seu estado original.
+
+                - backwards: Os estilos da primeira etapa da animação (keyframe) são aplicados antes da animação começar, mesmo se o elemento estiver em seu estado original. Isso significa que o elemento começa na primeira etapa da animação e depois continua com a animação normalmente.
+
+                - both: Combina os efeitos de forwards e backwards, ou seja, aplica os estilos da primeira etapa antes da animação começar e os estilos da última etapa depois que a animação termina.
+            */
+        }
+
+        #content:hover{
+        animation: disappear 2s linear none;
+        cursor: pointer;
+        }   
+
+        /*
+        Junto da propriedade animation, devemos utilizar os chamados keyframes. Os Keyframes são pontos de referência que definem os diferentes estágios de uma animação em CSS. Eles permitem especificar como os estilos de um elemento devem mudar ao longo do tempo durante a animação.
+
+        Os definimos usando a regra @keyframes, seguida pelo nome da animação. Dentro dos keyframes, você especifica os diferentes estágios da animação usando porcentagens (de 0% a 100%) ou palavras-chave como from (equivalente a 0%) e to (equivalente a 100%). A utilização do from e to permite apenas dois estágios de animação.
+
+        Para cada etapa dos keyframes, podemos definir estilos que deseja aplicar ao elemento durante essa etapa da animação. Isso pode incluir propriedades como transform, opacity, color, entre outras.
+        */
+
+        @keyframes disappear{
+            /*Início da animação:*/
+            0%{
+                opacity: 1;
+            }
+
+            25%{
+                opacity: 0.66;
+                width: 150px;   
+            }
+
+            50%{
+                opacity: 0.33;
+                width: 75px;
+            }
+
+            /*Fim da animação:*/
+            100%{
+                opacity: 0;
+                width: 25px;
+            }
+        }
+    </style>
+    <title>Animation</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+
+        </div>
+    </div>
+</body>
+</html>
