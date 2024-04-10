@@ -1,0 +1,27 @@
+Exercício 01 - Criando nossas primeiras estruturas semânticas (h1 e p) e entendo os conceitos de viewport e initial-scale.
+
+Exercício 02 - Aprendendo a pular linhas e adicionar símbolos e emojis em nosso texto.
+
+Exercício 03 - Aprendendo a adicionar imagens em nossa página.
+
+Exercício 04 - Aprendendo a utilizar os favicons.
+
+Exercício 05 - Trabalhando com tags de título (h).
+
+Exercício 06 - Tags semânticas para texto.
+
+Exercício 07 - Mais tags semânticas para texto.
+
+Exercício 08 - Tipos de lista.
+
+Exercício 09 - Trabalhando com links.
+
+Exercício 10 - Lidando com arquivos de mídia e audio.
+
+Exercício 11 - Trabalhando com vídeos.
+
+Exercício 12 - Aplicando CSS inline.
+
+Exercício 13 - Aplicante CSS interno.
+
+Exercício 14 - Aplicando CSS externo.
