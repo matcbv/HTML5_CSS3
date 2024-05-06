@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 200%;
+    background-color: darkcyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: grid;
+    height: 100%;
+    grid-template:  'sessao-01' 1fr
+                    'sessao-02' 1fr
+                    'sessao-03' 1fr
+                    / 100%;
+}
+
+.first-div{
+    grid-area: sessao-01;
+    background: black url(../../Módulo_02/projeto_modulo-02/midia/imagens/img01_G.jpg) no-repeat center fixed;
+    background-size: cover;
+    }
+
+.sec-div{
+    grid-area: sessao-02;
+}
+
+.sec-div h1{
+    height: 20%;
+}
+
+.grid-div{
+    display: grid;
+    height: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: white;
+}
+
+.sec-divs{
+    background-color: black;
+    outline: 2px solid blue;
+}
+
+.tirt-div{
+    grid-area: sessao-03;
+}
