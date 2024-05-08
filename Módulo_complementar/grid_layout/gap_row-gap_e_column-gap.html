@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #grid{
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            /*
+            gap - Com gap, definir o espaçamento entre as linhas e colunas da nossa grid.
+            row-gap - Com row-gap, definimos o espaçamento entre as linhas de nossa grid.
+            column-gap - Com column-gap, definimos o espaçamento entre as colunas de nossa grid.
+
+            gap: 20px;
+
+            Teria o mesmo resultado de:
+            */
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        #grid div{
+            background-color: dimgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+</body>
+</html>
