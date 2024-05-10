@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        /*
+        Com grid-auto-flow, estaremos definindo o direcionamento a ser seguido pelos novos items a serem colocados. Os possíveis valores são column, row e dense.
+        
+        Já com grid-auto-rows e grid-auto-columns, conseguimos definir a altura das linhas e comprimento das colunas, respectivamente. O número de valores que passarmos serão os valores para cada uma das novas linhas/colunas criadas.
+        */
+        grid-auto-flow: column;
+        /*As próximas três colunas terão 300, 150 e 75 pixels de comprimento.*/
+        grid-auto-columns: 300px 150px 75px;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container column">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        </div>
+    </div>
+</body>
+</html>
