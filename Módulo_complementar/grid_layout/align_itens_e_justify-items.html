@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            max-width: 100vw;
+        }
+
+        #grid{
+            display: grid;
+            grid-template: 'col01 col02' 300px
+                            /50% 50%;
+            /*
+            Através da propriedade justify-items, conseguimos definir o posicionameto horizontal (eixo-x) dos itens contidos nas grades de nosso grid.
+            
+            Ele possui os mesmos valores vistos anteriormente ao trabalharmos com o display flex,
+            entretanto, ao invés de flex-start e flex-end, utilizaremos start e end.
+            */
+            justify-items: center;
+            /*
+            Já com a propriedade align-items, conseguimos definir o posicionameto vertical (eixo-y) dos itens contidos nas grades de nosso grid.
+
+            Os mesmos valores de justify-items são aplicados ao align-items.
+            */
+            align-items: center;
+            /*
+            Quando possuirem valores iguais, podemos unificar ambas as propriedades com o shorthand place-items:
+            */
+            place-items: center;
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: dimgray;
+        }
+
+        #div-pai-01, #div-pai-02{
+            width: 50%;
+            background-color: darkgrey;
+        }
+
+        #div-pai-01 div, #div-pai-02 div{
+            width: 100%;
+            border: 1px solid black;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+    <title>Trabalhando com nomes</title>
+</head>
+<body>
+    <div id="grid">
+        <div id="div-pai-01">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+        <div id="div-pai-02">
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+        </div>
+    </div>
+</body>
+</html>

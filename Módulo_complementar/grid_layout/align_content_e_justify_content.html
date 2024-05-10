@@ -12,15 +12,17 @@
 
         #grid{
             display: grid;
-            grid-template: 'col01 col02' auto
-                            /50% 50%;
-            /*Através da propriedade justify-items, conseguimos definir o posicionameto dos itens
-            contidos nas grades de nosso grid.
-            
-            Ele possui os mesmos valores vistos anteriormente ao trabalharmos com o display flex,
-            entretanto, ao invés de flex-start e flex-end, utilizaremos start e end.
+            grid-template: 'col01' 300px
+                            /50%;
+            /*
+            Com justify-content e align-content, iremos posicionar todo o conteúdo do grid em relação ao seu container pai quando seu espaço for menor que o disponível. A propriedade justify-content realizará o posicionamento horizontal (eixo-x) e align-content no vertical (eixo-y).
             */
-            justify-items: center;
+            justify-content: end;
+            align-content: end;
+            /*
+            Podemos utilizar um shorthand chamado place-content, no caso das duas propriedades possuirem o mesmo valor. 
+            */
+            place-content: end;
             height: auto;
             width: 100%;
             padding: 20px;
@@ -28,12 +30,16 @@
             background-color: dimgray;
         }
 
-        #div-pai-01, #div-pai-02{
+        #div-pai{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
             width: 50%;
-            justify-items: center;
+            height: 150px;
+            background-color: darkgray;
         }
 
-        #div-pai-01 div, #div-pai-02 div{
+        #div-pai div{
             width: 100%;
             border: 1px solid black;
             background-color: lightblue;
@@ -44,12 +50,10 @@
 </head>
 <body>
     <div id="grid">
-        <div id="div-pai-01">
+        <div id="div-pai">
             <div>Item 1</div>
             <div>Item 2</div>
             <div>Item 3</div>
-        </div>
-        <div id="div-pai-02">
             <div>Item 4</div>
             <div>Item 5</div>
             <div>Item 6</div>
