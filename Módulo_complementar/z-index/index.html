@@ -1,0 +1,55 @@
+<!--
+    A propriedade z-index é responsável por controlar a ordem empilhada de elementos posicionados. Isso significa que você pode usar z-index para determinar quais elementos aparecem a frente de outros quando eles se sobrepõem.
+
+    São afetados pela propriedade z-index, elementos com posição definida (position: absolute, position: relative, position: fixed, ou position: sticky)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box1, .box2, .box3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            background-color: red;
+            left: 30px;
+            top: 30px;
+            /*
+                Quanto maior o valor da propriedade z-index, maior a prioridade na ordem de empilhamento.
+                Obs.: Os valores devem ser números inteiros.
+            */
+            z-index: 1; /* Aparecerá no fundo */
+        }
+
+        .box2 {
+            background-color: green;
+            left: 60px;
+            top: 60px;
+            z-index: 2; /* Aparecerá no meio */
+        }
+
+        .box3 {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 3; /* Aparecerá na frente */
+        }
+
+    </style>
+    <title>z-index</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+        
+    </div>
+</body>
+</html>
