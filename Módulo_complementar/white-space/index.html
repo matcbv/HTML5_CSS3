@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de White-Space</title>
+    <style>
+        .example {
+            width: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .normal {
+            white-space: normal;
+        }
+        .nowrap {
+            white-space: nowrap;
+        }
+        .pre {
+            white-space: pre;
+        }
+        .pre-line {
+            white-space: pre-line;
+        }
+        .pre-wrap {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ------------------- Valores da propriedade white-space -------------------
+        - normal: Colapsa espaços em branco e realiza quebras de linha automáticas.
+        - nowrap: Colapsa espaços em branco, mas impede a quebra de linha automática.
+        - pre: Preserva todos os espaços em branco e quebras de linha.
+        - pre-line: Colapsa espaços em branco, mas preserva as quebras de linha.
+        - pre-wrap: Preserva espaços em branco e quebras de linha.
+    -->
+    <h1>Exemplos de White-Space</h1>
+    
+    <div class="example normal">
+        <strong>white-space: normal;</strong><br>
+        Este é um texto de exemplo.    Os espaços e quebras de linha
+        serão colapsados de forma padrão.
+    </div>
+    
+    <div class="example nowrap">
+        <strong>white-space: nowrap;</strong><br>
+        Este é um texto de exemplo.    Os espaços são colapsados,
+        mas não haverá quebras de linha automáticas.
+    </div>
+    
+    <div class="example pre">
+        <strong>white-space: pre;</strong><br>
+        Este é um texto de exemplo.    Os espaços e quebras de linha
+        serão preservados.
+    </div>
+    
+    <div class="example pre-line">
+        <strong>white-space: pre-line;</strong><br>
+        Este é um texto de exemplo.    Os espaços são colapsados,
+        mas as quebras de linha serão preservadas.
+    </div>
+    
+    <div class="example pre-wrap">
+        <strong>white-space: pre-wrap;</strong><br>
+        Este é um texto de exemplo.    Os espaços e quebras de linha
+        serão preservados, mas o texto será quebrado quando necessário
+        para se ajustar ao contêiner.
+    </div>
+</body>
