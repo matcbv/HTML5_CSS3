@@ -1,0 +1,17 @@
+O cabeçalho de referência (Referer) é um campo no cabeçalho HTTP que contém a URL da página a partir da qual a solicitação foi feita. Este cabeçalho é automaticamente incluído pelo navegador quando um usuário clica em um link, carrega um recurso (como uma imagem, script, ou folha de estilo), ou envia um formulário. Ex.:
+
+Um usuário que está navegando na página https://example.com/page1 e clica no link https://anotherexample.com/page2 contido nessa página
+
+Quando o navegador do usuário faz a solicitação para https://anotherexample.com/page2, ele incluirá https://example.com/page1 no cabeçalho de referência na solicitação HTTP.
+
+Assim, o servidor anotherexample.com sabe que a solicitação para page2 veio de https://example.com/page1.
+
+Obs.: Isso também ocorre para solicitações do mesmo domínio.
+
+O cabeçalho de referência tem diversas funções como:
+
+- Análise de tráfego: Ajuda os proprietários de sites a entender de onde os visitantes estão vindo e quais links estão gerando mais tráfego.
+
+- Marketing e SEO: Permite que os profissionais de marketing rastreiem a eficácia das campanhas publicitárias e de marketing.
+
+- Segurança e diagnóstico: Pode ser usado para monitorar atividades suspeitas ou ajudar no diagnóstico de problemas de navegação.
