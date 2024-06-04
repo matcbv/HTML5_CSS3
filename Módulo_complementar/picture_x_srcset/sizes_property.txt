@@ -2,7 +2,7 @@ A propriedade sizes informa ao navegador quanto espaço a imagem irá ocupar em 
 
 Estrutura doa propriedade:
 
-sizes="<condição-de-mídia> <tamanho>,
+sizes="<condição-de-mídia> <tamanho>"
 
 onde a condição de mídia é uma consulta de mídia CSS que define quando uma certa regra de tamanho deve ser aplicada e o tamanho é um valor que indica quanto espaço a imagem deve ocupar na viewport, geralmente em pixels (px) ou em porcentagem (%).
 

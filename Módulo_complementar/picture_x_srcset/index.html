@@ -18,6 +18,8 @@
     </picture>
     <!--
          atributo srcset no elemento <img> é usado para definir múltiplas versões da mesma imagem com diferentes resoluções. O navegador escolherá automaticamente a imagem mais adequada com base na densidade de pixels da tela e nas dimensões da viewport.
+        
+        No atributo srcset, cada valor é composto por um URL seguido por um descritor. Os descritores comuns são w (largura física da imagem em pixels) e x (densidade de pixels da imagem).
 
          O source nos permite uma responsividade na tratativa com arquivos de mídia.
     -->
@@ -28,8 +30,8 @@
     <img 
         src="./images/earth_1280.jpg"
 
-        srcset="./images/earth_640.jpg 640w,
-                .images/earth_320.jpg 320w"
+        srcset=".images/earth_320.jpg 320w,
+                ./images/earth_640.jpg 640w"
 
         sizes= "(max-width: 600px) 100vw,
                 (max-width: 900px) 50vw,
@@ -37,5 +39,32 @@
 
         alt="Planeta Terra" 
     >
+    <!--
+        Dessa forma, passamos duas imagens no srcset. Uma com 640 pixels de largura, e outra com 320 pixels de largura
+    -->
 </body>
 </html>
+
+<!-- 
+    Além da tag picture, podemos também utilizar a tag source nas tags audio e video.
+
+    Com <audio>:
+
+        No contexto de áudio, <source> é usado dentro do elemento <audio> para definir múltiplas fontes de áudio. Isso permite que o navegador escolha a fonte que ele pode reproduzir. Ex.:
+
+        <audio controls>
+            <source src="audio/audio.ogg" type="audio/ogg">
+            <source src="audio/audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+    Com <video>:
+
+        No contexto de vídeo, <source> é usado dentro do elemento <video> para definir múltiplas fontes de vídeo. Isso permite que o navegador escolha a fonte que ele pode reproduzir.
+
+        <video controls>
+            <source src="video/video.webm" type="video/webm">
+            <source src="video/video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+-->
