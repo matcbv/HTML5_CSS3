@@ -1,0 +1,19 @@
+A propriedade sizes informa ao navegador quanto espaço a imagem irá ocupar em diferentes tamanhos de viewport. Com essa informação, o navegador pode decidir qual imagem do srcset é mais adequada para carregar, com base na largura da viewport e na densidade de pixels do dispositivo.
+
+Estrutura doa propriedade:
+
+sizes="<condição-de-mídia> <tamanho>,
+
+onde a condição de mídia é uma consulta de mídia CSS que define quando uma certa regra de tamanho deve ser aplicada e o tamanho é um valor que indica quanto espaço a imagem deve ocupar na viewport, geralmente em pixels (px) ou em porcentagem (%).
+
+Ex.:
+
+sizes="(max-width: 600px) 100vw, 
+        (max-width: 900px) 50vw, 
+        33vw"
+
+- (max-width: 600px) 100vw: Se a largura da viewport for até 600 pixels, a imagem deve ocupar 100% da largura da viewport.
+
+- (max-width: 900px) 50vw: Se a largura da viewport for até 900 pixels, a imagem deve ocupar 50% da largura da viewport.
+
+- 33vw: Em qualquer outra condição (quando a viewport é maior que 900 pixels), a imagem deve ocupar 33% da largura da viewport.

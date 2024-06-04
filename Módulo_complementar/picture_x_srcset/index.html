@@ -6,6 +6,36 @@
     <title>picture ou srcset</title>
 </head>
 <body>
-    
+    <!--
+        O elemento <picture> permite que você forneça várias fontes de imagem para diferentes condições de mídia, como largura da viewport ou suporte a formatos de imagem específicos. Ele é composto por um ou mais elementos <source> e um elemento <img>. Cada <source> define uma imagem alternativa e as condições em que deve ser usada.
+
+        O source nos permite um controle de flexibilidade e controle de formato de imagem.
+    -->
+    <picture>
+        <source media="(max-width: 640px)" srcset="./images/astronaut.jpg" type="image/jpg">
+        <source media="(max-width: 1280px)" srcset="./images/moon.jpg" type="image/jpg">
+        <img src="./images/earth.jpg" alt="Planeta Terra">
+    </picture>
+    <!--
+         atributo srcset no elemento <img> é usado para definir múltiplas versões da mesma imagem com diferentes resoluções. O navegador escolherá automaticamente a imagem mais adequada com base na densidade de pixels da tela e nas dimensões da viewport.
+
+         O source nos permite uma responsividade na tratativa com arquivos de mídia.
+    -->
+
+    <!--
+        Obs.: Há uma explicaçao sobre a propriedade sizes nesse mesmo tópico.
+    -->
+    <img 
+        src="./images/earth_1280.jpg"
+
+        srcset="./images/earth_640.jpg 640w,
+                .images/earth_320.jpg 320w"
+
+        sizes= "(max-width: 600px) 100vw,
+                (max-width: 900px) 50vw,
+                33vw"
+
+        alt="Planeta Terra" 
+    >
 </body>
 </html>
