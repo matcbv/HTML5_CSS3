@@ -6,14 +6,14 @@ As tags do HTML5 têm valores semânticos que devem ser considerados para obterm
 
 <menu>: Menu de navegação do nosso site. Diferente da tag <nav>, a tag <menu> pode ou não se referir a conteúdos relacionados a página atual, sendo uma tag mais genérica.
 
-<main>: Todo o conteúdo principal do nosso site.
+<main>: Contém todo o conteúdo principal do nosso site.
 
 <section>: Usado para armazenar conteúdo relativo ao nosso site. Geralmente usado quando não há nenhuma outra tag mais específica apropriada.
 
-<article>: Usada para marcar um conteúdo independente, que não tem relação direta com o restante do conteúdo do site.
+<article>: Usada para marcar um conteúdo que pode ser distribuído ou reutilizado de forma independente, contendo informações que podem ser compreendidas de maneira autônoma, mesmo fora do contexto do restante do site.
 
-<aside>: Armazena o conteúdo tangencial ao site, porém não contido diretamente a ele, como links externos, bibliografias, referências etc.
+<aside>: Usada usada para marcar conteúdo que está relacionado, mas é tangencial ao conteúdo principal ao redor. Pode incluir informações adicionais ou complementares, como biografias de autor, links para posts relacionados, citações, notas de rodapé
 
 <footer>: Rodapé do nosso site. Usado para colocar informações como contato, endereço, direitos autorais etc.
 
-<blockquote>: Ussado para representar uma citação em bloco, se trata de uma seção de conteúdo que é citada de outra fonte e geralmente é exibida com uma indentação para destacá-la do restante do texto. É apropriado para trechos de texto mais longos que são citados de outra fonte.
+<blockquote>: Usado para representar uma citação em bloco, se tratando de uma seção de conteúdo que é citada de outra fonte e geralmente é exibida com uma indentação para destacá-la do restante do texto. É apropriado para trechos de texto mais longos que são citados de outra fonte.
