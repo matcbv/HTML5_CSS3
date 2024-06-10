@@ -15,3 +15,5 @@ As tags do HTML5 têm valores semânticos que devem ser considerados para obterm
 <aside>: Armazena o conteúdo tangencial ao site, porém não contido diretamente a ele, como links externos, bibliografias, referências etc.
 
 <footer>: Rodapé do nosso site. Usado para colocar informações como contato, endereço, direitos autorais etc.
+
+<blockquote>: Ussado para representar uma citação em bloco, se trata de uma seção de conteúdo que é citada de outra fonte e geralmente é exibida com uma indentação para destacá-la do restante do texto. É apropriado para trechos de texto mais longos que são citados de outra fonte.
