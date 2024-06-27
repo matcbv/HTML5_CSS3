@@ -1,0 +1,4 @@
+<blockquote>: Usado para representar uma citação em bloco, se tratando de uma seção de conteúdo que é citada de outra fonte e geralmente é exibida com uma indentação para destacá-la do restante do texto. É apropriado para trechos de texto mais longos que são citados de outra fonte.
+
+<abbr>: A tag <abbr> em HTML é usada para marcar uma abreviação ou acrônimo, fornecendo uma explicação completa do texto abreviado através do atributo title. Isso é útil para melhorar a acessibilidade e proporcionar informações adicionais ao usuário. Ex.: <abbr title="HyperText Markup Language">HTML</abbr>
+

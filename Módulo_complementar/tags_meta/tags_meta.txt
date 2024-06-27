@@ -1,0 +1,52 @@
+As tags <meta> no HTML são utilizadas para fornecer metadados sobre a página web. Elas são colocadas dentro do elemento <head> e não possuem conteúdo visível na página, mas são importantes para navegadores, mecanismos de busca, e outros serviços web.
+
+Alguns exemplos de funções da tag meta são:
+
+1- <meta charset="UTF-8">
+  
+ Define a codificação de caracteres da página, ajudando a evitar problemas de caracteres especiais.
+
+
+2- <meta http-equiv="Cache-Control" content="no-cache">
+
+Define como o navegador deve armazenar a página em cache.
+
+
+3- <meta name="description" content="Uma breve descrição da página.">
+
+Fornece uma descrição da página, útil para motores de busca.
+
+
+4- <meta name="keywords" content="HTML, CSS, JavaScript">
+
+Lista de palavras-chave relevantes para motores de busca.
+
+
+5- <meta name="author" content="Seu Nome">
+
+Informa quem é o autor da página.
+
+
+6- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+A meta tag viewport é essencial para garantir que a sua página web seja exibida corretamente em dispositivos móveis. Sem essa tag, as páginas podem não ser exibidas de forma adequada em telas menores, como as de smartphones e tablets. A tag viewport controla a maneira como a página é dimensionada e exibida no navegador do dispositivo.
+
+
+---------- Valores da tag content ----------
+
+- width: Define a largura da área de visualização. Pode ser um valor específico (em pixels) ou a palavra-chave device-width, que define a largura conforme a largura da tela do dispositivo. Exs.:
+
+* width=device-width
+* width=992
+
+Obs.: Caso passemos um valor em pixels, devemos omitir o 
+
+- initial-scale: Define o nível inicial de zoom quando a página é carregada pela primeira vez. O valor 1.0 significa que a página será exibida sem qualquer zoom inicial. Ex.: initial-scale=1.0
+
+- minimum-scale: Define o menor nível de zoom que o usuário pode aplicar na página. Ex.: minimum-scale=1.0
+
+- maximum-scale: Define o maior nível de zoom que o usuário pode aplicar na página. Ex.: maximum-scale=3.0
+
+Obs.: Os valores maximum-scale e minimum-scale só serão posto em vigor caso user-scalabe esteja definido como yes (valor padrão). Caso não informemos nenhuma escala para eles, o zoom mínimo e máximo será definido pelo próprio dispositivo.
+
+- user-scalable: Determina se o usuário pode ou não aplicar zoom manualmente na página. Pode ser yes ou no. Ex.: user-scalable=no
