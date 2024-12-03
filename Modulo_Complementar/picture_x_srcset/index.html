@@ -16,10 +16,11 @@
         <source media="(max-width: 1280px)" srcset="./images/moon.jpg" type="image/jpg">
         <img src="./images/earth.jpg" alt="Planeta Terra">
     </picture>
+
     <!--
          atributo srcset no elemento <img> é usado para definir múltiplas versões da mesma imagem com diferentes resoluções. O navegador escolherá automaticamente a imagem mais adequada com base na densidade de pixels da tela e nas dimensões da viewport.
         
-        No atributo srcset, cada valor é composto por um URL seguido por um descritor. Os descritores comuns são w (largura física da imagem em pixels) e x (densidade de pixels da imagem).
+        No atributo srcset, cada valor é composto por um URL seguido por um descritor, indicando qual o comprimento/densidade daquela imagem. Os descritores comuns são w (largura física da imagem em pixels) e x (densidade de pixels da imagem).
 
          O source nos permite uma responsividade na tratativa com arquivos de mídia.
     -->
@@ -30,7 +31,7 @@
     <img 
         src="./images/earth_1280.jpg"
 
-        srcset=".images/earth_320.jpg 320w,
+        srcset="./images/earth_320.jpg 320w,
                 ./images/earth_640.jpg 640w"
 
         sizes= "(max-width: 600px) 100vw,
@@ -42,6 +43,12 @@
     <!--
         Dessa forma, passamos duas imagens no srcset. Uma com 640 pixels de largura, e outra com 320 pixels de largura
     -->
+
+    <!--
+        Utilizaremos <picture> quando precisarmos de um maior controle sobre quais imagens são exibidas em diferentes condições (e.g., diferentes formatos de imagem ou orientações de dispositivos).
+
+        Utilizaremos srcset no <img> quando quisermos fornecer diferentes resoluções da mesma imagem para otimizar o carregamento baseado na densidade de pixels e tamanho da tela.
+    -->>
 </body>
 </html>
 
