@@ -17,7 +17,7 @@
         }
         #b{
             background-color: rgb(238, 182, 61);
-            color: white; /* <- Não terá efeito*/
+            color: white; /*Não terá efeito*/
         }
     </style>
     <title>Padronização de colunas</title>
@@ -25,16 +25,19 @@
 <body>
     <form action="" method="dialog"></form>
     <table>
-        <!--A tag <colgroup> informa a quantidade e mesclagem das colunas presentes em nossa tabela, sendo responsável por aplicar determinados estilos em nossa tabela. Caso tenhamos 4 colunas, devemos informar tal informação através de tags <col>. Lembrando que a tag <col> não possui fechamento.-->
-        <!--Obs.: A tag colgroup é responsável por aplicar estilos as colunas, enquanto a tag thead é responsável por definir o cabeçalho da tabela.-->
+        <!--
+            A tag <colgroup> informa a quantidade e mesclagem das colunas presentes em nossa tabela, sendo responsável por aplicar determinados estilos em nossa tabela. Caso tenhamos 4 colunas, devemos informar tal informação através de tags <col>. Lembrando que a tag <col> não possui fechamento.
+
+            Obs.: A tag colgroup é responsável por aplicar estilos as colunas, enquanto a tag thead é responsável por definir o cabeçalho da tabela. 
+        -->
         <colgroup>
             <col class="a">
             <!--
-            Ao utilizarmos a propriedade span, as colunas selecionadas só serão afetadas por 4 propriedades:
-            - background-color
-            - border
-            - width
-            - visibility
+                Ao utilizarmos a propriedade span, as colunas selecionadas só serão afetadas por 4 propriedades:
+                - background-color
+                - border
+                - width
+                - visibility
             -->
             <col id="b" span="2">
             <col class="a">
